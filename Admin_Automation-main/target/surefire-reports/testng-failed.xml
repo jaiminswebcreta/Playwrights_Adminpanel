@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.Admin_MilkRide.Utilities.ExtentListenerClass"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.FrontEnd_MilkRide.Module.Frontend_Functionality">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="Buy_Once_Order_Evening"/>
+          <include name="Buy_Once_Order_Morning"/>
+          <include name="LoginwithMobilenumberer"/>
+        </methods>
+      </class> <!-- com.FrontEnd_MilkRide.Module.Frontend_Functionality -->
+      <class name="com.Admin_MilkRide.Module.Admin_Allmodule">
+        <methods>
+          <include name="tearDown"/>
+          <include name="Hubmanager"/>
+          <include name="Customer_Managemnt"/>
+          <include name="setup"/>
+          <include name="General_Setting"/>
+          <include name="LoginAdminpenal"/>
+        </methods>
+      </class> <!-- com.Admin_MilkRide.Module.Admin_Allmodule -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
