@@ -96,7 +96,6 @@ export class DeliveryPage{
 
         await this.dashboard.click();
         console.log('Clicked on Dashboard');
-        await this.page.waitForLoadState('networkidle');
         
         
     }
