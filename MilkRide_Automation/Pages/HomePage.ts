@@ -21,6 +21,19 @@ export class HomePage{
     //Notifications
     readonly notifications:Locator
     readonly pushnotification:Locator
+    //Billing History
+    readonly billinghistory:Locator
+    readonly Invoice:Locator
+    //Customers
+    readonly customersmanagement:Locator
+    readonly customers:Locator
+    readonly Grouppricing:Locator
+    readonly customergroups:Locator
+    readonly DiscountRules:Locator
+    readonly coupons:Locator
+
+
+
 
 
     constructor(page:Page){ 
@@ -35,8 +48,14 @@ export class HomePage{
         this.Warehouse=page.locator(`(//span[normalize-space()='Warehouse'])[1]`);
         this.notifications=page.locator(`(//span[@class='menu-title'][normalize-space()='Notifications'])[1]`);
         this.pushnotification=page.locator(`(//span[normalize-space()='Push Notifications'])[1]`);
-
-       
+        this.billinghistory=page.locator(`(//span[contains(text(),'Billing & History')])[1]`);
+        this.Invoice=page.locator(`(//span[normalize-space()='Invoices'])[1]`);
+        this.customersmanagement=page.locator(`(//span[contains(text(),'Customer Management')])[1]`);
+        this.customers=page.locator(`(//span[@class='menu-title'][normalize-space()='Customers'])[1]`);
+        this.Grouppricing=page.locator(`(//span[normalize-space()='Group Pricing'])[1]`);
+        this.customergroups=page.locator(`(//span[normalize-space()='Customers Groups'])[1]`);   
+        this.DiscountRules=page.locator(`(//span[normalize-space()='Discount Rules'])[1]`);
+        this.coupons=page.locator(`(//span[normalize-space()='Coupons'])[1]`);    
     
     }
 
@@ -89,5 +108,45 @@ export class HomePage{
         console.log('Clicked on Push Notifications');
         await this.page.waitForLoadState('networkidle');
     }   
+    async navigateToBillingHistory(){
+        
+        await this.billinghistory.waitFor({ state: 'visible' });
+        console.log('✅ Billing & History Tab is visible');
+        await this.billinghistory.click();
+        console.log('Clicked on Billing & History');
+        await this.Invoice.click();
+        console.log('Clicked on Invoices');
+        await this.page.waitForLoadState('networkidle');
+    }
+    async navigateToCustomersManagement(){
+        
+        await this.customersmanagement.waitFor({ state: 'visible' });
+        console.log('✅ Customer Management Tab is visible');
+        await this.customersmanagement.click();
+        console.log('Clicked on Customer Management');
+        await this.customers.click();
+        console.log('Clicked on Customers');
+        await this.page.waitForLoadState('networkidle');
+    }
+    async navigateToGroupPricing(){
+        
+        await this.Grouppricing.waitFor({ state: 'visible' });
+        console.log('✅ Group Pricing Tab is visible');
+        await this.Grouppricing.click();
+        console.log('Clicked on Group Pricing');
+        await this.customergroups.click();
+        console.log('Clicked on Customers Groups');
+        await this.page.waitForLoadState('networkidle');
+    }
+    async navigateToDiscountRules(){
+        
+        await this.DiscountRules.waitFor({ state: 'visible' });
+        console.log('✅ Discount Rules Tab is visible');
+        await this.DiscountRules.click();
+        console.log('Clicked on Discount Rules');
+        await this.coupons.click();
+        console.log('Clicked on Coupons');
+        await this.page.waitForLoadState('networkidle');
+    }
     
 }

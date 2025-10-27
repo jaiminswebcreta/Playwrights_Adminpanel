@@ -14,6 +14,20 @@ import { SettingsPage } from '../Pages/Inventory/SettingsPage';
 import { PushNotificationPage } from '../Pages/Notification/PushNotificationPage';  
 import {New_Aeeival_ProductsPage} from '../Pages/Notification/New_Arrival_ProductsPage';
 import {TemplatesPage} from '../Pages/Notification/TemplatesPage';
+import { invoicesPage } from '../Pages/Billing_History/Invoices';
+import { customersPage } from '../Pages/Customer_Management/customersPage';
+import { customeraddressrequest } from '../Pages/Customer_Management/customeraddressrequest';
+import { SubscriptionsPage } from '../Pages/Customer_Management/SubscriptionPage';
+import { FlwexsubscriptionPage } from '../Pages/Customer_Management/FlexsubscriptionPage';
+import {orderPage} from '../Pages/Customer_Management/OrderPage';
+import { CustomerInvoicePage } from '../Pages/Customer_Management/CustomerInvoicePage';
+import { CustomerGroupPage } from '../Pages/Grouppricing/CustomerGroupPage';
+import { GroupsPage } from '../Pages/Grouppricing/GroupsPage';
+import { couponsPage } from '../Pages/DiscountRules/CoupunsPage';
+
+
+
+
 
 
 test.describe.serial('All Module Test', () => {
@@ -32,6 +46,17 @@ test.describe.serial('All Module Test', () => {
     let pushNotificationPage: PushNotificationPage;
     let newArrivalProductsPage: New_Aeeival_ProductsPage;
     let templatesPage: TemplatesPage;
+    let invoicespage: invoicesPage;
+    let customerspage: customersPage;
+    let customeraddressrequestpage: customeraddressrequest;
+    let subscriptionspage: SubscriptionsPage;
+    let flexsubscriptionpage: FlwexsubscriptionPage;
+    let orderpage: orderPage;
+    let customerinvoicepage: CustomerInvoicePage;
+    let customerGroupPage: CustomerGroupPage;
+    let groupsPage: GroupsPage;
+    let couponspage: couponsPage;
+
 
 
   test.beforeAll(async ({ browser }) => {
@@ -52,10 +77,18 @@ test.describe.serial('All Module Test', () => {
     pushNotificationPage = new PushNotificationPage(page);
     newArrivalProductsPage = new New_Aeeival_ProductsPage(page);
     templatesPage = new TemplatesPage(page);
+    invoicespage = new invoicesPage(page);
+    customerspage = new customersPage(page);
+    customeraddressrequestpage = new customeraddressrequest(page);
+    subscriptionspage = new SubscriptionsPage(page);
+    flexsubscriptionpage = new FlwexsubscriptionPage(page);
+    orderpage = new orderPage(page);
+    customerinvoicepage = new CustomerInvoicePage(page);
+    customerGroupPage = new CustomerGroupPage(page);
+    groupsPage = new GroupsPage(page);
+    couponspage = new couponsPage(page);
 
   
- 
-
     // Login once
     await loginPage.OpenURL();
    
@@ -93,12 +126,39 @@ test.describe.serial('All Module Test', () => {
     await pushNotificationPage.verifyPushNotificationPage();
     await newArrivalProductsPage.verifyNewArrivalProductsPage();
     await templatesPage.verifyTemplatesPage();
-    
-
-
 
   });
+  test('Billing History Module', async () => {
+    await homePage.navigateToBillingHistory();
+    await invoicespage.verifyInvoicesPage();
+    
+
+  });
+  test('Customers Management Module', async () => {
+    await homePage.navigateToCustomersManagement();
+    await customerspage.verifyCustomersPage();
+    await customeraddressrequestpage.verifyCustomerAddressRequestPage();
+    await subscriptionspage .verifySubscriptionsPage();
+    await flexsubscriptionpage.verifyFlexsubscriptionPage();
+    await orderpage.verifyOrderPage();
+    await customerinvoicepage.verifyCustomerInvoicePage();
+
+  });
+  test('Group Pricing Module', async () => {
+    await homePage.navigateToGroupPricing();
+    await customerGroupPage.verifyCustomerGroupPage();
+    await groupsPage.verifyGroupsPage();
+     
+    // You can add verification for Group Pricing page here if needed
+
+  });
+
+  test('Discount Rules Module', async () => {
+    await homePage.navigateToDiscountRules();
+    await couponspage.verifyCouponsPage();
+  });
+  
 //   test.afterAll(async () => {
 //     console.log('✅ Completed all tests in same session');
 //   });
-});
+})
