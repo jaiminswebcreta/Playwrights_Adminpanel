@@ -24,10 +24,10 @@ import { CustomerInvoicePage } from '../Pages/Customer_Management/CustomerInvoic
 import { CustomerGroupPage } from '../Pages/Grouppricing/CustomerGroupPage';
 import { GroupsPage } from '../Pages/Grouppricing/GroupsPage';
 import { couponsPage } from '../Pages/DiscountRules/CoupunsPage';
-
-
-
-
+import { SalesDashboardPage } from '../Pages/Sales/SalesDashboardPage';
+import { ProductAnalysisPage } from '../Pages/Sales/ProductAnalysisPage';
+import { MostSellingpackagesPage } from '../Pages/Sales/MostsellingpackagesPage';
+import { MostSellingSubscriptionPage } from '../Pages/Sales/MostSellingSubscriptionPage';
 
 
 test.describe.serial('All Module Test', () => {
@@ -56,7 +56,10 @@ test.describe.serial('All Module Test', () => {
     let customerGroupPage: CustomerGroupPage;
     let groupsPage: GroupsPage;
     let couponspage: couponsPage;
-
+    let salesDashboardPage: SalesDashboardPage;
+    let productAnalysisPage: ProductAnalysisPage;
+    let mostSellingpackagesPage: MostSellingpackagesPage;
+    let mostSellingSubscriptionPage: MostSellingSubscriptionPage;
 
 
   test.beforeAll(async ({ browser }) => {
@@ -87,7 +90,12 @@ test.describe.serial('All Module Test', () => {
     customerGroupPage = new CustomerGroupPage(page);
     groupsPage = new GroupsPage(page);
     couponspage = new couponsPage(page);
+    salesDashboardPage = new SalesDashboardPage(page);
+    productAnalysisPage = new ProductAnalysisPage(page);  
+    mostSellingpackagesPage = new MostSellingpackagesPage(page);
+    mostSellingSubscriptionPage = new MostSellingSubscriptionPage(page);
 
+    
   
     // Login once
     await loginPage.OpenURL();
@@ -97,7 +105,7 @@ test.describe.serial('All Module Test', () => {
     await page.waitForTimeout(3000);
     await homePage.indexToApp();
    
-  });
+  }); 
 
   test('Navigate to Hub Manager', async () => {
     await homePage.navigateToHubManager();
@@ -157,8 +165,15 @@ test.describe.serial('All Module Test', () => {
     await homePage.navigateToDiscountRules();
     await couponspage.verifyCouponsPage();
   });
-  
-//   test.afterAll(async () => {
-//     console.log('✅ Completed all tests in same session');
-//   });
+
+  test('Navigate to Sales Module', async () => {
+    await homePage.navigateToSales();
+    await salesDashboardPage.verifySalesDashboardPage();
+    await productAnalysisPage.verifyProductAnalysisPage();
+    await mostSellingpackagesPage.verifyMostSellingpackagesPage();
+    await mostSellingSubscriptionPage.verifyMostSellingSubscriptionPage();
+  });
+  test.afterAll(async () => {
+    console.log('✅ Completed all tests in same session');
+  });
 })

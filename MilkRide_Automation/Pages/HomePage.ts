@@ -31,6 +31,9 @@ export class HomePage{
     readonly customergroups:Locator
     readonly DiscountRules:Locator
     readonly coupons:Locator
+    //Sales
+    readonly sales:Locator
+    readonly salesdashboard:Locator
 
 
 
@@ -55,7 +58,9 @@ export class HomePage{
         this.Grouppricing=page.locator(`(//span[normalize-space()='Group Pricing'])[1]`);
         this.customergroups=page.locator(`(//span[normalize-space()='Customers Groups'])[1]`);   
         this.DiscountRules=page.locator(`(//span[normalize-space()='Discount Rules'])[1]`);
-        this.coupons=page.locator(`(//span[normalize-space()='Coupons'])[1]`);    
+        this.coupons=page.locator(`(//span[normalize-space()='Coupons'])[1]`);   
+        this.sales=page.locator(`(//span[@class='menu-title'][normalize-space()='Sales'])[1]`);
+        this.salesdashboard=page.locator(`(//span[normalize-space()='Sales Dashboard'])[1]`); 
     
     }
 
@@ -148,5 +153,15 @@ export class HomePage{
         console.log('Clicked on Coupons');
         await this.page.waitForLoadState('networkidle');
     }
+    async navigateToSales(){
+        
+        await this.sales.waitFor({ state: 'visible' });
+        console.log('✅ Sales Tab is visible');
+        await this.sales.click();
+        console.log('Clicked on Sales');
+        await this.salesdashboard.click();
+        console.log('Clicked on Sales Dashboard');
+        await this.page.waitForLoadState('networkidle');
+    }   
     
 }
