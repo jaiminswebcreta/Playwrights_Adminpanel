@@ -17,6 +17,7 @@ export class MostSellingpackagesPage{
         console.log('🌐 Current URL is: ' + currentUrl);    
         await this.mostselingsubscription.isVisible();
         console.log('✅ Dashboard link is visible'); 
+        
         await this.mostselingsubscription.click();
         console.log('Clicked on most selling subscription link');
                 

@@ -16,7 +16,8 @@ export class SalesDashboardPage{
         const currentUrl= this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.productanalysistab.isVisible();
-        console.log('✅ Product Analysis Tab is visible'); 
+        console.log('✅ Product Analysis Tab is visible');
+        await this.page.waitForTimeout(2000);
         await this.productanalysistab.click();
         console.log('Clicked on Product Analysis Tab');                
     }

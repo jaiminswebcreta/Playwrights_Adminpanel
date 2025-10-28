@@ -17,6 +17,7 @@ export class CustomerInvoicePage{
         console.log('🌐 Current URL is: ' + currentUrl);    
         await this.dashboard.isVisible();
         console.log('✅ Dashboard link is visible'); 
+        await this.page.waitForTimeout(2000);
         await this.dashboard.click();
         console.log('Clicked on Dashboard link');
                 

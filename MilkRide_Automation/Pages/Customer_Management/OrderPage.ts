@@ -28,6 +28,6 @@ export class orderPage {
         console.log('✅ Customer Invoice Tab is visible');
         await this.CustomerinvoiceTab.click();
         console.log('Clicked on Customer Invoice Tab');
-        await this.page.waitForLoadState('networkidle');          
+                  
     }
 }
