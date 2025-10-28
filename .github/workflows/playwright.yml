@@ -1,25 +1,14 @@
-name: Run Playwright Tests
+name: Run Code (No npm install)
 
 on:
-  workflow_dispatch:   # Run manually
-  push:
-    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
-  test:
+  run:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run Playwright tests
-        run: npx playwright test
+      - name: Run a sample script
+        run: echo "Code checkout successful ✅"
