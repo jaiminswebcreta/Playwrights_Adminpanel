@@ -157,6 +157,7 @@ export class HomePage{
         
         await this.sales.waitFor({ state: 'visible' });
         console.log('✅ Sales Tab is visible');
+          await this.sales.waitFor({ state: 'visible', timeout: 5000 });
         await this.sales.click();
         console.log('Clicked on Sales');
         await this.salesdashboard.click();

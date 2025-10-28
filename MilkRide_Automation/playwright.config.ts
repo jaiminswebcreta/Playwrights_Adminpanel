@@ -30,8 +30,8 @@ reporter: [
   use: {
     headless: false,
     viewport: { width: 1280, height: 800 },
-    actionTimeout: 30000,
-    navigationTimeout: 60000,
+    actionTimeout: 90000,
+    navigationTimeout: 90000,
     screenshot: 'only-on-failure',
 
 

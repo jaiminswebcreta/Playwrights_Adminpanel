@@ -17,6 +17,8 @@ export class ProductAnalysisPage{
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.MostSellingpackages.isVisible();
         console.log('✅ Most Selling Packages Tab is visible'); 
+        await this.page.waitForTimeout(2000);
+
         await this.MostSellingpackages.click();
         console.log('Clicked on Most Selling Packages Tab');                
     }

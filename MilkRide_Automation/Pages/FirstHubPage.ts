@@ -77,9 +77,11 @@ export class FirstHubPage {
     await this.page.waitForLoadState('load');
     await this.dashboard.waitFor({ state: 'visible' });
     console.log('✅ Dashboard link is visible');
+    await this.dashboard.waitFor({ state: 'visible', timeout: 5000 });
+    console.log('✅ Dashboard link is visible');
     await this.dashboard.click();
     console.log('Clicked on Dashboard link');
-    await this.page.waitForLoadState('domcontentloaded');
+    
     
     // const hubName = await this.hubDetailsHeader.textContent();
     // console.log('🏠 Hub Name: ' + hubName?.trim());

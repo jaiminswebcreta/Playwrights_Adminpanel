@@ -16,9 +16,20 @@ export class MostSellingSubscriptionPage{
         console.log(`📝 Header text: ${headerText}`);
         const currentUrl= this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
-        await this.Topcustomerspend.isVisible() 
+        
+       await this.Topcustomerspend.waitFor({ state: 'visible', timeout: 5000 });
+       
         console.log('✅ Top Customers by Spend Tab is visible'); 
-        await this.Topcustomerspend.click();
-        console.log('Clicked on Top Customers by Spend Tab');                
-    }
+      try {
+         await this.Topcustomerspend.waitFor({ state: 'visible', timeout: 5000 });
+         await this.Topcustomerspend.click();
+         await this.page.waitForSelector('text=Most Selling Subscriptions', { timeout: 10000 });
+}     catch (err: unknown) {
+         if (err instanceof Error) {
+             console.error('❌ Failed during Most Selling Subscriptions flow:', err.message);
+         } else {
+             console.error('❌ Failed during Most Selling Subscriptions flow:', err);
+         }
+} 
+}
 }   

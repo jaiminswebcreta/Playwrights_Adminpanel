@@ -28,6 +28,13 @@ import { SalesDashboardPage } from '../Pages/Sales/SalesDashboardPage';
 import { ProductAnalysisPage } from '../Pages/Sales/ProductAnalysisPage';
 import { MostSellingpackagesPage } from '../Pages/Sales/MostsellingpackagesPage';
 import { MostSellingSubscriptionPage } from '../Pages/Sales/MostSellingSubscriptionPage';
+import { TopcustomerspendPage } from '../Pages/Sales/TopcustomerspendPage';
+import { SalebyareaPage } from '../Pages/Sales/SalebyareaPage';
+import{ SalebyHubPage } from '../Pages/Sales/SalebyHubPage';
+import{ SalesbydeliveryexcutivePage } from '../Pages/Sales/SalebydeliveryexcutivePage';
+import { salebycustomergroupPage } from '../Pages/Sales/SalebycustomergroupPage';
+
+
 
 
 test.describe.serial('All Module Test', () => {
@@ -60,7 +67,11 @@ test.describe.serial('All Module Test', () => {
     let productAnalysisPage: ProductAnalysisPage;
     let mostSellingpackagesPage: MostSellingpackagesPage;
     let mostSellingSubscriptionPage: MostSellingSubscriptionPage;
-
+    let topcustomerspendPage: TopcustomerspendPage;
+    let salebyareatabPage: SalebyareaPage;
+    let salebyhubtabPage: SalebyHubPage;
+    let salebydeliveryexcutivetabPage: SalesbydeliveryexcutivePage;
+    let salebycustomergrouptabPage: salebycustomergroupPage;
 
   test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
@@ -94,6 +105,12 @@ test.describe.serial('All Module Test', () => {
     productAnalysisPage = new ProductAnalysisPage(page);  
     mostSellingpackagesPage = new MostSellingpackagesPage(page);
     mostSellingSubscriptionPage = new MostSellingSubscriptionPage(page);
+    topcustomerspendPage = new TopcustomerspendPage(page);
+    salebyareatabPage = new SalebyareaPage(page);
+    salebyhubtabPage = new SalebyHubPage(page);
+    salebydeliveryexcutivetabPage = new SalesbydeliveryexcutivePage(page);
+    salebycustomergrouptabPage = new salebycustomergroupPage(page);
+
 
     
   
@@ -150,6 +167,7 @@ test.describe.serial('All Module Test', () => {
     await flexsubscriptionpage.verifyFlexsubscriptionPage();
     await orderpage.verifyOrderPage();
     await customerinvoicepage.verifyCustomerInvoicePage();
+    
 
   });
   test('Group Pricing Module', async () => {
@@ -172,8 +190,13 @@ test.describe.serial('All Module Test', () => {
     await productAnalysisPage.verifyProductAnalysisPage();
     await mostSellingpackagesPage.verifyMostSellingpackagesPage();
     await mostSellingSubscriptionPage.verifyMostSellingSubscriptionPage();
+    await topcustomerspendPage .verifyTopcustomerspendPage();
+    await salebyareatabPage .verifysalebyareatabPage();
+    await salebyhubtabPage .verifysalebyhubtabPage();
+    await salebydeliveryexcutivetabPage.verifysalebydeliveryexcutivetabPage();
+    await salebycustomergrouptabPage.verifysalebycustomergrouptabPage();
   });
-  test.afterAll(async () => {
-    console.log('✅ Completed all tests in same session');
-  });
+  // test.afterAll(async () => {
+  //   console.log('✅ Completed all tests in same session');
+  // });
 })
