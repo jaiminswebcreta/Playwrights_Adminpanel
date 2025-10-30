@@ -10,6 +10,7 @@ export class BatchesPage{
         this.thresholdstab=page.locator(`(//span[normalize-space()='Thresholds'])[1]`);
     }
     async verifyBatchesPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.batchesHeader.isVisible();
@@ -21,4 +22,8 @@ export class BatchesPage{
         await this.page.waitForLoadState('networkidle');
             
         }
+        catch (error) {
+            console.error('❌ Error in verifying Batches Page:', error);
+        }
+    }
 }

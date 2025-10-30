@@ -1,245 +1,908 @@
-[2025-10-28T10:11:25.744Z] Filled username
-[2025-10-28T10:11:25.778Z] Filled Password
-[2025-10-28T10:11:27.217Z] Clicked on login button
-[2025-10-28T10:11:36.630Z] Login Successful and Dashboard is visible
-[2025-10-28T10:11:36.630Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
-[2025-10-28T10:11:36.809Z] Clicked on Hub Manager
-[2025-10-28T10:11:37.390Z] Clicked on All Hubs
-[2025-10-28T10:11:38.453Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs
-[2025-10-28T10:11:38.497Z] Hub List Page is visible
-[2025-10-28T10:11:38.515Z] Add Hub Button is visible
-[2025-10-28T10:11:38.531Z] First Hub is visible
-[2025-10-28T10:11:38.589Z] First Hub name is: Rural Bloom CH
-[2025-10-28T10:11:40.065Z] Clicked on First Hub
-[2025-10-28T10:11:41.651Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs/show/20/info
-[2025-10-28T10:11:41.680Z] ✅ Hub Details Header is visible
-[2025-10-28T10:11:41.699Z] 📝 Header text: Hub:
+[2025-10-30T09:41:27.375Z] Filled username
+[2025-10-30T09:41:27.423Z] Filled Password
+[2025-10-30T09:41:29.107Z] Clicked on login button
+[2025-10-30T09:41:33.972Z] Login Successful and Dashboard is visible
+[2025-10-30T09:41:33.973Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T09:41:34.146Z] 🚀 Starting Complaint System Module Test
+[2025-10-30T09:41:34.204Z] Complaint System Tab is visible
+[2025-10-30T09:41:34.595Z] Clicked on Complaint System Tab
+[2025-10-30T09:41:34.662Z] All Complaints option is visible
+[2025-10-30T09:41:36.260Z] Clicked on All Complaints
+[2025-10-30T09:41:38.304Z] 📝 Header text: Complaint Management
+[2025-10-30T09:41:38.304Z] 🌐 Current URL is: https://app.milkride.com/admin/complaint-managements
+[2025-10-30T09:41:38.350Z] Refunds Request option is visible
+[2025-10-30T09:41:38.932Z] Clicked on Refunds Request
+[2025-10-30T09:41:40.567Z] 📝 Header text: 
+                            Refund Requests
+[2025-10-30T09:41:40.568Z] 🌐 Current URL is: https://app.milkride.com/admin/refund-requests
+[2025-10-30T09:41:40.568Z] ✅ Completed Complaint System Module Test
+[2025-10-30T10:38:57.033Z] Filled username
+[2025-10-30T10:38:57.089Z] Filled Password
+[2025-10-30T10:38:58.665Z] Clicked on login button
+[2025-10-30T10:39:03.380Z] Login Successful and Dashboard is visible
+[2025-10-30T10:39:03.381Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T10:39:03.487Z] 🚀 Starting Product Catalog Module Test
+[2025-10-30T10:39:03.510Z] Product Catalog Tab is visible
+[2025-10-30T10:39:03.671Z] Clicked on Product Catalog Tab
+[2025-10-30T10:39:03.718Z] Categories option is visible
+[2025-10-30T10:39:06.261Z] Clicked on Categories
+[2025-10-30T10:39:09.155Z] 📝 Header text: 
+                            Categories List
+[2025-10-30T10:39:09.157Z] 🌐 Current URL is: https://app.milkride.com/admin/categories
+[2025-10-30T10:39:09.182Z] Add Category button is visible
+[2025-10-30T10:39:09.218Z] Brand option is visible
+[2025-10-30T10:39:10.115Z] Clicked on Brand
+[2025-10-30T10:39:11.173Z] 📝 Header text: Brand
+                            List
+[2025-10-30T10:39:11.175Z] 🌐 Current URL is: https://app.milkride.com/admin/brands
+[2025-10-30T10:39:11.198Z] Add Brand button is visible
+[2025-10-30T10:39:11.234Z] Products option is visible
+[2025-10-30T10:39:12.090Z] Clicked on Products
+[2025-10-30T10:39:14.435Z] 📝 Header text: Product
+                            List
+[2025-10-30T10:39:14.435Z] 🌐 Current URL is: https://app.milkride.com/admin/products
+[2025-10-30T10:39:14.454Z] Add Product button is visible
+[2025-10-30T10:39:14.489Z] Product Ordering option is visible
+[2025-10-30T10:39:15.311Z] Clicked on Product Ordering
+[2025-10-30T10:39:17.881Z] 📝 Header text: Product Ordering
+[2025-10-30T10:39:17.881Z] 🌐 Current URL is: https://app.milkride.com/admin/products/ordering
+[2025-10-30T10:39:17.895Z] Quick Product Update option is visible
+[2025-10-30T10:39:19.284Z] Clicked on Quick Product Update
+[2025-10-30T10:39:21.369Z] 📝 Header text: Product
+                            List
+[2025-10-30T10:39:21.369Z] 🌐 Current URL is: https://app.milkride.com/admin/bulkProducts/bulkProducts
+[2025-10-30T10:39:21.489Z] Settings option is visible
+[2025-10-30T10:39:24.224Z] Clicked on Settings
+[2025-10-30T10:39:25.484Z] 📝 Header text: 
+                            Payment Modes
+                            
+                        
+[2025-10-30T10:39:25.489Z] 🌐 Current URL is: https://app.milkride.com/admin/setting/payment-modes
+[2025-10-30T10:39:25.489Z] ✅ Completed Product Catalog Module Test
+[2025-10-30T12:10:34.248Z] Filled username
+[2025-10-30T12:10:34.315Z] Filled Password
+[2025-10-30T12:10:37.562Z] Clicked on login button
+[2025-10-30T12:10:52.886Z] Login Successful and Dashboard is visible
+[2025-10-30T12:10:52.886Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:10:52.966Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:10:53.128Z] Attributestab is visible
+[2025-10-30T12:13:43.650Z] Filled username
+[2025-10-30T12:13:43.727Z] Filled Password
+[2025-10-30T12:13:45.185Z] Clicked on login button
+[2025-10-30T12:13:50.304Z] Login Successful and Dashboard is visible
+[2025-10-30T12:13:50.305Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:13:50.531Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:13:50.895Z] Attributestab is visible
+[2025-10-30T12:18:18.658Z] Filled username
+[2025-10-30T12:18:18.698Z] Filled Password
+[2025-10-30T12:18:20.392Z] Clicked on login button
+[2025-10-30T12:18:30.643Z] Login Successful and Dashboard is visible
+[2025-10-30T12:18:30.644Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:18:30.708Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:18:30.859Z] Attributestab is visible
+[2025-10-30T12:22:27.622Z] Filled username
+[2025-10-30T12:22:27.669Z] Filled Password
+[2025-10-30T12:22:29.257Z] Clicked on login button
+[2025-10-30T12:22:39.635Z] Login Successful and Dashboard is visible
+[2025-10-30T12:22:39.635Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:22:39.692Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:22:39.856Z] Attributestab is visible
+[2025-10-30T12:22:40.690Z] 📝 Header text: Attribute List
+[2025-10-30T12:22:40.691Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:22:40.714Z] Add Category button is visible
+[2025-10-30T12:22:40.744Z] 📝 Header text: Attribute List
+[2025-10-30T12:22:40.747Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:22:40.830Z] 📝 Header text: Attribute List
+[2025-10-30T12:22:40.831Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:22:40.833Z] ✅ Completed FlexProduct Module Test
+[2025-10-30T12:25:16.155Z] Filled username
+[2025-10-30T12:25:16.196Z] Filled Password
+[2025-10-30T12:25:17.804Z] Clicked on login button
+[2025-10-30T12:25:28.164Z] Login Successful and Dashboard is visible
+[2025-10-30T12:25:28.167Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:25:28.261Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:25:28.392Z] Attributestab is visible
+[2025-10-30T12:25:29.332Z] 📝 Header text: Attribute List
+[2025-10-30T12:25:29.332Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:25:29.362Z] Add Category button is visible
+[2025-10-30T12:25:29.433Z] Working day tab is visible
+[2025-10-30T12:28:22.383Z] Filled username
+[2025-10-30T12:28:22.423Z] Filled Password
+[2025-10-30T12:28:24.154Z] Clicked on login button
+[2025-10-30T12:28:33.489Z] Login Successful and Dashboard is visible
+[2025-10-30T12:28:33.491Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:28:33.568Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:28:33.711Z] Attributestab is visible
+[2025-10-30T12:28:34.573Z] 📝 Header text: Attribute List
+[2025-10-30T12:28:34.573Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:28:34.606Z] Add Category button is visible
+[2025-10-30T12:28:34.691Z] Working day tab is visible
+[2025-10-30T12:28:35.363Z] click on Workingday
+[2025-10-30T12:31:10.183Z] Filled username
+[2025-10-30T12:31:10.228Z] Filled Password
+[2025-10-30T12:31:11.796Z] Clicked on login button
+[2025-10-30T12:31:21.820Z] Login Successful and Dashboard is visible
+[2025-10-30T12:31:21.821Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:31:21.888Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:31:22.062Z] Attributestab is visible
+[2025-10-30T12:31:22.895Z] 📝 Header text: Attribute List
+[2025-10-30T12:31:22.895Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:31:22.930Z] Add Category button is visible
+[2025-10-30T12:31:22.962Z] Working day tab is visible
+[2025-10-30T12:31:23.737Z] click on Workingday
+[2025-10-30T12:31:23.997Z] 📝 Header text: Working Days
+[2025-10-30T12:31:23.997Z] 🌐 Current URL is: https://app.milkride.com/admin/working_days
+[2025-10-30T12:31:24.047Z] PlanSolt is visible
+[2025-10-30T12:31:24.916Z] 📝 Header text: 
+                     Plan Slots List
+[2025-10-30T12:31:24.916Z] 🌐 Current URL is: https://app.milkride.com/admin/planslot
+[2025-10-30T12:31:24.916Z] ✅ Completed FlexProduct Module Test
+[2025-10-30T12:41:27.021Z] Filled username
+[2025-10-30T12:41:27.072Z] Filled Password
+[2025-10-30T12:41:28.613Z] Clicked on login button
+[2025-10-30T12:41:33.096Z] Login Successful and Dashboard is visible
+[2025-10-30T12:41:33.097Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:41:33.191Z] 🚀 Starting Hub Manager Module Test
+[2025-10-30T12:41:33.444Z] Clicked on Hub Manager
+[2025-10-30T12:41:35.172Z] Clicked on All Hubs
+[2025-10-30T12:41:36.288Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs
+[2025-10-30T12:41:36.321Z] Hub List Page is visible
+[2025-10-30T12:41:36.336Z] Add Hub Button is visible
+[2025-10-30T12:41:36.345Z] First Hub is visible
+[2025-10-30T12:41:36.392Z] First Hub name is: Rural Bloom CH
+[2025-10-30T12:41:37.970Z] Clicked on First Hub
+[2025-10-30T12:41:39.566Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs/show/20/info
+[2025-10-30T12:41:39.588Z] ✅ Hub Details Header is visible
+[2025-10-30T12:41:39.601Z] 📝 Header text: Hub:
                             Rural Bloom CH
                         
-[2025-10-28T10:11:41.714Z] ✅ Accounts Tab is visible
-[2025-10-28T10:11:43.038Z] Clicked on Accounts Tab
-[2025-10-28T10:11:43.783Z] ✅ Locations Tab is visible
-[2025-10-28T10:11:45.081Z] Clicked on Locations Tab
-[2025-10-28T10:11:45.807Z] ✅ Products Tab is visible
-[2025-10-28T10:11:47.177Z] Clicked on Products Tab
-[2025-10-28T10:11:48.396Z] ✅ Contacts Tab is visible
-[2025-10-28T10:11:49.823Z] Clicked on Contacts Tab
-[2025-10-28T10:11:50.495Z] ✅ Documents Tab is visible
-[2025-10-28T10:11:51.782Z] Clicked on Documents Tab
-[2025-10-28T10:11:52.512Z] ✅ Disable Area Tab is visible
-[2025-10-28T10:11:53.989Z] Clicked on Disable Area Tab
-[2025-10-28T10:11:54.662Z] ✅ Payment Gateway Tab is visible
-[2025-10-28T10:11:56.167Z] Clicked on Payment Gateway Tab
-[2025-10-28T10:11:56.868Z] ✅ Batches Tab is visible
-[2025-10-28T10:11:58.535Z] Clicked on Batches Tab
-[2025-10-28T10:11:59.038Z] ✅ Dashboard link is visible
-[2025-10-28T10:11:59.053Z] ✅ Dashboard link is visible
-[2025-10-28T10:11:59.831Z] Clicked on Dashboard link
-[2025-10-28T10:12:00.178Z] ✅ Delivery Tab is visible
-[2025-10-28T10:12:00.585Z] Clicked on Delivery
-[2025-10-28T10:12:02.575Z] Clicked on Delivery Dashboard
-[2025-10-28T10:12:03.613Z] 🌐 Current URL is: https://app.milkride.com/admin/delivery/delivery-dashboard
-[2025-10-28T10:12:03.688Z] Delivery Dashboard Page is visible
-[2025-10-28T10:12:03.724Z] Header is: Delivery Dashboard
-[2025-10-28T10:12:03.725Z] Completed Delivery Page verification
-[2025-10-28T10:12:03.740Z] ✅ Delivery Transfer Tab is visible
-[2025-10-28T10:12:04.290Z] Clicked on Delivery Transfer Tab
-[2025-10-28T10:12:05.232Z] 🌐 Delivery Transfer Tab URL: https://app.milkride.com/admin/delivery-transfer
-[2025-10-28T10:12:05.262Z] ✅ Dashboard Tab is visible
-[2025-10-28T10:12:05.275Z] ✅ Optimize Route Tab is visible
-[2025-10-28T10:12:06.313Z] Clicked on Optimize Route Tab
-[2025-10-28T10:12:08.195Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
-[2025-10-28T10:12:08.228Z] ✅ Manual Route Tab is visible
-[2025-10-28T10:12:09.135Z] Clicked on Manual Route Tab
-[2025-10-28T10:12:10.118Z] 🌐 Manual Route Tab URL: https://app.milkride.com/admin/delivery/manual-route
-[2025-10-28T10:12:10.148Z] ✅ Optimize Route Tab is visible
-[2025-10-28T10:12:10.944Z] Clicked on Optimize Route Tab
-[2025-10-28T10:12:11.982Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
-[2025-10-28T10:12:12.023Z] ✅ Order History Tab is visible
-[2025-10-28T10:12:12.826Z] Clicked on Order History Tab
-[2025-10-28T10:12:14.089Z] 🌐 Order History Tab URL: https://app.milkride.com/admin/delivery/order-history
-[2025-10-28T10:12:14.135Z] ✅ Route Assignment Tab is visible
-[2025-10-28T10:12:14.620Z] Clicked on Route Assignment Tab
-[2025-10-28T10:12:15.548Z] 🌐 Route Assignment Tab URL: https://app.milkride.com/admin/delivery/route-assignment
-[2025-10-28T10:12:15.576Z] ✅ Master Route Tab is visible
-[2025-10-28T10:12:16.719Z] Clicked on Master Route Tab
-[2025-10-28T10:12:17.635Z] 🌐 Master Route Tab URL: https://app.milkride.com/admin/master-delivery/master-route
-[2025-10-28T10:12:17.671Z] ✅ Dashboard Tab is visible
-[2025-10-28T10:12:18.400Z] Clicked on Dashboard
-[2025-10-28T10:12:18.689Z] ✅ Inventory Tab is visible
-[2025-10-28T10:12:19.128Z] Clicked on Inventory
-[2025-10-28T10:12:21.246Z] Clicked on Warehouse
-[2025-10-28T10:12:22.148Z] 🌐 Current URL is: https://app.milkride.com/admin/warehouse
-[2025-10-28T10:12:22.197Z] Header is: 
+[2025-10-30T12:41:39.616Z] ✅ Accounts Tab is visible
+[2025-10-30T12:41:41.149Z] Clicked on Accounts Tab
+[2025-10-30T12:41:42.136Z] ✅ Locations Tab is visible
+[2025-10-30T12:41:43.545Z] Clicked on Locations Tab
+[2025-10-30T12:41:44.559Z] ✅ Products Tab is visible
+[2025-10-30T12:41:46.274Z] Clicked on Products Tab
+[2025-10-30T12:41:48.400Z] ✅ Contacts Tab is visible
+[2025-10-30T12:41:49.878Z] Clicked on Contacts Tab
+[2025-10-30T12:41:51.260Z] ✅ Documents Tab is visible
+[2025-10-30T12:41:52.828Z] Clicked on Documents Tab
+[2025-10-30T12:41:54.138Z] ✅ Disable Area Tab is visible
+[2025-10-30T12:41:55.795Z] Clicked on Disable Area Tab
+[2025-10-30T12:41:57.154Z] ✅ Payment Gateway Tab is visible
+[2025-10-30T12:41:58.860Z] Clicked on Payment Gateway Tab
+[2025-10-30T12:41:59.919Z] ✅ Batches Tab is visible
+[2025-10-30T12:42:01.369Z] Clicked on Batches Tab
+[2025-10-30T12:42:01.971Z] ✅ Dashboard link is visible
+[2025-10-30T12:42:01.998Z] ✅ Dashboard link is visible
+[2025-10-30T12:42:02.780Z] Clicked on Dashboard link
+[2025-10-30T12:42:02.780Z] ✅ Completed Hub Manager Module Test
+[2025-10-30T12:42:02.918Z] 🚀 Starting Delivery Module Test
+[2025-10-30T12:42:03.188Z] Delivery Tab is visible
+[2025-10-30T12:42:03.677Z] Clicked on Delivery
+[2025-10-30T12:42:05.484Z] Clicked on Delivery Dashboard
+[2025-10-30T12:42:06.605Z] 🌐 Current URL is: https://app.milkride.com/admin/delivery/delivery-dashboard
+[2025-10-30T12:42:06.676Z] Delivery Dashboard Page is visible
+[2025-10-30T12:42:06.716Z] Header is: Delivery Dashboard
+[2025-10-30T12:42:06.716Z] Completed Delivery Page verification
+[2025-10-30T12:42:06.731Z] ✅ Delivery Transfer Tab is visible
+[2025-10-30T12:42:07.239Z] Clicked on Delivery Transfer Tab
+[2025-10-30T12:42:08.267Z] 🌐 Delivery Transfer Tab URL: https://app.milkride.com/admin/delivery-transfer
+[2025-10-30T12:42:08.303Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:42:08.320Z] ✅ Optimize Route Tab is visible
+[2025-10-30T12:42:09.310Z] Clicked on Optimize Route Tab
+[2025-10-30T12:42:10.693Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
+[2025-10-30T12:42:10.726Z] ✅ Manual Route Tab is visible
+[2025-10-30T12:42:11.890Z] Clicked on Manual Route Tab
+[2025-10-30T12:42:12.953Z] 🌐 Manual Route Tab URL: https://app.milkride.com/admin/delivery/manual-route
+[2025-10-30T12:42:12.986Z] ✅ Optimize Route Tab is visible
+[2025-10-30T12:42:14.019Z] Clicked on Optimize Route Tab
+[2025-10-30T12:42:15.171Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
+[2025-10-30T12:42:15.209Z] ✅ Order History Tab is visible
+[2025-10-30T12:42:16.275Z] Clicked on Order History Tab
+[2025-10-30T12:42:17.606Z] 🌐 Order History Tab URL: https://app.milkride.com/admin/delivery/order-history
+[2025-10-30T12:42:17.642Z] ✅ Route Assignment Tab is visible
+[2025-10-30T12:42:18.261Z] Clicked on Route Assignment Tab
+[2025-10-30T12:42:19.262Z] 🌐 Route Assignment Tab URL: https://app.milkride.com/admin/delivery/route-assignment
+[2025-10-30T12:42:19.314Z] ✅ Master Route Tab is visible
+[2025-10-30T12:42:20.566Z] Clicked on Master Route Tab
+[2025-10-30T12:42:21.538Z] 🌐 Master Route Tab URL: https://app.milkride.com/admin/master-delivery/master-route
+[2025-10-30T12:42:21.582Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:42:22.322Z] Clicked on Dashboard
+[2025-10-30T12:42:22.323Z] ✅ Completed Delivery Module Test
+[2025-10-30T12:42:22.431Z] 🚀 Starting Inventory Module Test
+[2025-10-30T12:42:22.690Z] Inventory Tab is visible
+[2025-10-30T12:42:23.152Z] Clicked on Inventory
+[2025-10-30T12:42:25.727Z] Clicked on Warehouse
+[2025-10-30T12:42:26.704Z] 🌐 Current URL is: https://app.milkride.com/admin/warehouse
+[2025-10-30T12:42:26.763Z] Header is: 
                             Warehouse List
-[2025-10-28T10:12:22.209Z] Add Warehouse Button is visible
-[2025-10-28T10:12:22.690Z] Clicked on Suppliers Tab
-[2025-10-28T10:12:23.594Z] 🌐 Current URL is: https://app.milkride.com/admin/supplier
-[2025-10-28T10:12:23.643Z] Header is: 
+[2025-10-30T12:42:26.780Z] Add Warehouse Button is visible
+[2025-10-30T12:42:27.368Z] Clicked on Suppliers Tab
+[2025-10-30T12:42:28.295Z] 🌐 Current URL is: https://app.milkride.com/admin/supplier
+[2025-10-30T12:42:28.349Z] Header is: 
                             Supplier List
-[2025-10-28T10:12:23.654Z] Add Supplier Button is visible
-[2025-10-28T10:12:24.061Z] Clicked on Purchase Inventory Tab
-[2025-10-28T10:12:25.027Z] 🌐 Current URL is: https://app.milkride.com/admin/purchase
-[2025-10-28T10:12:25.077Z] Header is: 
+[2025-10-30T12:42:28.357Z] Add Supplier Button is visible
+[2025-10-30T12:42:28.850Z] Clicked on Purchase Inventory Tab
+[2025-10-30T12:42:29.887Z] 🌐 Current URL is: https://app.milkride.com/admin/purchase
+[2025-10-30T12:42:29.941Z] Header is: 
                             Purchase List
-[2025-10-28T10:12:25.089Z] Add Purchase Inventory Button is visible
-[2025-10-28T10:12:25.507Z] Clicked on Batches Tab
-[2025-10-28T10:12:27.046Z] 🌐 Current URL is: https://app.milkride.com/admin/batch/list
-[2025-10-28T10:12:27.090Z] Header is: Batch List
-[2025-10-28T10:12:27.856Z] Clicked on Thresholds Tab
-[2025-10-28T10:12:28.976Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/thresholds
-[2025-10-28T10:12:29.029Z] Header is: 
+[2025-10-30T12:42:29.951Z] Add Purchase Inventory Button is visible
+[2025-10-30T12:42:30.485Z] Clicked on Batches Tab
+[2025-10-30T12:42:31.952Z] 🌐 Current URL is: https://app.milkride.com/admin/batch/list
+[2025-10-30T12:42:32.040Z] Header is: Batch List
+[2025-10-30T12:42:32.937Z] Clicked on Thresholds Tab
+[2025-10-30T12:42:34.904Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/thresholds
+[2025-10-30T12:42:34.966Z] Header is: 
                         Inventory Threshold Settings
                     
-[2025-10-28T10:12:29.040Z] Settings Tab is visible
-[2025-10-28T10:12:29.542Z] Clicked on Settings Tab
-[2025-10-28T10:12:30.624Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/settings
-[2025-10-28T10:12:30.668Z] Header is: 
+[2025-10-30T12:42:34.982Z] Settings Tab is visible
+[2025-10-30T12:42:35.582Z] Clicked on Settings Tab
+[2025-10-30T12:42:36.843Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/settings
+[2025-10-30T12:42:36.943Z] Header is: 
                         Inventory Threshold Settings
                     
-[2025-10-28T10:12:31.279Z] Clicked on Dashboard Tab
-[2025-10-28T10:12:36.135Z] ✅ Notifications Tab is visible
-[2025-10-28T10:12:36.220Z] Clicked on Notifications
-[2025-10-28T10:12:36.612Z] Clicked on Push Notifications
-[2025-10-28T10:12:37.627Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications
-[2025-10-28T10:12:37.658Z] Push Notification Page is visible
-[2025-10-28T10:12:37.665Z] Header is: Push
+[2025-10-30T12:42:37.695Z] Clicked on Dashboard Tab
+[2025-10-30T12:42:44.300Z] ✅ Completed Inventory Module Test
+[2025-10-30T12:42:44.362Z] 🚀 Starting Notifications Module Test
+[2025-10-30T12:42:44.441Z] Notifications Tab is visible
+[2025-10-30T12:42:44.676Z] Clicked on Notifications
+[2025-10-30T12:42:45.724Z] Clicked on Push Notifications
+[2025-10-30T12:42:46.496Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications
+[2025-10-30T12:42:46.641Z] Push Notification Page is visible
+[2025-10-30T12:42:47.075Z] Header is: Push
                             Notifications List
-[2025-10-28T10:12:37.683Z] New Notification Button is visible on Push Notification Page
-[2025-10-28T10:12:38.184Z] Clicked on New Arrival Button
-[2025-10-28T10:12:39.249Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/new-arrival-products
-[2025-10-28T10:12:39.274Z] New Arrival Products Notification Page is visible
-[2025-10-28T10:12:39.289Z] Header is: 
+[2025-10-30T12:42:47.187Z] New Notification Button is visible on Push Notification Page
+[2025-10-30T12:42:48.014Z] Clicked on New Arrival Button
+[2025-10-30T12:42:49.546Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/new-arrival-products
+[2025-10-30T12:42:49.594Z] New Arrival Products Notification Page is visible
+[2025-10-30T12:42:49.605Z] Header is: 
                             New Arrival Products Notification
-[2025-10-28T10:12:39.296Z] Send New Notification Button is visible on New Arrival Products Notification Page
-[2025-10-28T10:12:39.833Z] Clicked on Templates Tab
-[2025-10-28T10:12:40.819Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/templates
-[2025-10-28T10:12:40.859Z] Notification Templates List Page is visible
-[2025-10-28T10:12:40.870Z] Header is: 
+[2025-10-30T12:42:49.625Z] Send New Notification Button is visible on New Arrival Products Notification Page
+[2025-10-30T12:42:50.442Z] Clicked on Templates Tab
+[2025-10-30T12:42:51.880Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/templates
+[2025-10-30T12:42:51.918Z] Notification Templates List Page is visible
+[2025-10-30T12:42:51.932Z] Header is: 
                             Notification Templates List
-[2025-10-28T10:12:40.879Z] Add Templates Button is visible on Notification Templates List Page
-[2025-10-28T10:12:41.500Z] Navigated back to Dashboard from Templates Page
-[2025-10-28T10:12:47.801Z] ✅ Billing & History Tab is visible
-[2025-10-28T10:12:47.878Z] Clicked on Billing & History
-[2025-10-28T10:12:48.339Z] Clicked on Invoices
-[2025-10-28T10:12:49.485Z] ✅ Invoices Page is visible
-[2025-10-28T10:12:49.486Z] 🌐 Current URL is: https://app.milkride.com/admin/merchants/invoices
-[2025-10-28T10:12:49.494Z] ✅ Dashboard is visible
-[2025-10-28T10:12:50.111Z] Clicked on Dashboard
-[2025-10-28T10:12:55.462Z] ✅ Customer Management Tab is visible
-[2025-10-28T10:12:55.696Z] Clicked on Customer Management
-[2025-10-28T10:12:56.288Z] Clicked on Customers
-[2025-10-28T10:12:58.275Z] ✅ Customers Page is visible
-[2025-10-28T10:12:58.285Z] 📝 Header text: Customers
+[2025-10-30T12:42:51.946Z] Add Templates Button is visible on Notification Templates List Page
+[2025-10-30T12:42:52.861Z] Navigated back to Dashboard from Templates Page
+[2025-10-30T12:43:00.257Z] ✅ Completed Notifications Module Test
+[2025-10-30T12:43:00.290Z] 🚀 Starting Billing History Module Test
+[2025-10-30T12:43:00.377Z] Billing & History Tab is visible
+[2025-10-30T12:43:00.608Z] Clicked on Billing & History
+[2025-10-30T12:43:01.283Z] Clicked on Invoices
+[2025-10-30T12:43:02.552Z] ✅ Invoices Page is visible
+[2025-10-30T12:43:02.553Z] 🌐 Current URL is: https://app.milkride.com/admin/merchants/invoices
+[2025-10-30T12:43:02.570Z] ✅ Dashboard is visible
+[2025-10-30T12:43:03.342Z] Clicked on Dashboard
+[2025-10-30T12:43:08.811Z] ✅ Completed Billing History Module Test
+[2025-10-30T12:43:08.849Z] 🚀 Starting Customers Management Module Test
+[2025-10-30T12:43:08.892Z] Customer Management Tab is visible
+[2025-10-30T12:43:09.045Z] Clicked on Customer Management
+[2025-10-30T12:43:09.589Z] Clicked on Customers
+[2025-10-30T12:43:11.583Z] ✅ Customers Page is visible
+[2025-10-30T12:43:11.591Z] 📝 Header text: Customers
                                     
-[2025-10-28T10:12:58.287Z] 🌐 Current URL is: https://app.milkride.com/admin/customers
-[2025-10-28T10:12:58.301Z] ✅ Add Customer button is visible
-[2025-10-28T10:12:58.310Z] ✅ Customer Address Request option is visible
-[2025-10-28T10:12:58.732Z] Clicked on Customer Address Request
-[2025-10-28T10:12:59.860Z] ✅ Customer Address Request Page is visible
-[2025-10-28T10:12:59.873Z] 📝 Header text: 
+[2025-10-30T12:43:11.591Z] 🌐 Current URL is: https://app.milkride.com/admin/customers
+[2025-10-30T12:43:11.598Z] ✅ Add Customer button is visible
+[2025-10-30T12:43:11.605Z] ✅ Customer Address Request option is visible
+[2025-10-30T12:43:12.194Z] Clicked on Customer Address Request
+[2025-10-30T12:43:13.561Z] ✅ Customer Address Request Page is visible
+[2025-10-30T12:43:13.584Z] 📝 Header text: 
                         Address Change Requests
-[2025-10-28T10:12:59.873Z] 🌐 Current URL is: https://app.milkride.com/admin/address-requests
-[2025-10-28T10:12:59.963Z] clicked customer management
-[2025-10-28T10:12:59.974Z] ✅ Subscriptions Tab is visible
-[2025-10-28T10:13:00.508Z] Clicked on Subscriptions Tab
-[2025-10-28T10:13:03.010Z] ✅ Subscriptions Page is visible
-[2025-10-28T10:13:03.023Z] 📝 Header text: All Customer Subscriptions
-[2025-10-28T10:13:03.023Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-subscriptions
-[2025-10-28T10:13:03.030Z] ✅ Add Subscription button is visible
-[2025-10-28T10:13:03.040Z] ✅ Flex Subscription option is visible
-[2025-10-28T10:13:04.938Z] Clicked on Flex Subscription option
-[2025-10-28T10:13:06.993Z] ✅ Flex Subscription Page is visible
-[2025-10-28T10:13:07.155Z] 📝 Header text: 
+[2025-10-30T12:43:13.584Z] 🌐 Current URL is: https://app.milkride.com/admin/address-requests
+[2025-10-30T12:43:13.792Z] clicked customer management
+[2025-10-30T12:43:13.814Z] ✅ Subscriptions Tab is visible
+[2025-10-30T12:43:14.434Z] Clicked on Subscriptions Tab
+[2025-10-30T12:43:17.133Z] ✅ Subscriptions Page is visible
+[2025-10-30T12:43:17.140Z] 📝 Header text: All Customer Subscriptions
+[2025-10-30T12:43:17.141Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-subscriptions
+[2025-10-30T12:43:17.149Z] ✅ Add Subscription button is visible
+[2025-10-30T12:43:17.160Z] ✅ Flex Subscription option is visible
+[2025-10-30T12:43:19.083Z] Clicked on Flex Subscription option
+[2025-10-30T12:43:21.810Z] ✅ Flex Subscription Page is visible
+[2025-10-30T12:43:21.834Z] 📝 Header text: 
                         FlexProduct Plans
                     
-[2025-10-28T10:13:07.156Z] 🌐 Current URL is: https://app.milkride.com/admin/order_subscriptions_plans/plans
-[2025-10-28T10:13:07.175Z] ✅ Add New Flex Subscription button is visible
-[2025-10-28T10:13:07.339Z] clicked customer management
-[2025-10-28T10:13:07.392Z] ✅ Orders Tab is visible
-[2025-10-28T10:13:07.990Z] Clicked on Orders Tab
-[2025-10-28T10:13:10.055Z] ✅ Order Page is visible
-[2025-10-28T10:13:10.061Z] 📝 Header text: All Customers Orders
-[2025-10-28T10:13:10.071Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-orders
-[2025-10-28T10:13:10.077Z] ✅ Add Order button is visible
-[2025-10-28T10:13:10.087Z] ✅ Customer Invoice Tab is visible
-[2025-10-28T10:13:10.800Z] Clicked on Customer Invoice Tab
-[2025-10-28T10:13:11.042Z] ✅ Customer Invoice Page is visible
-[2025-10-28T10:13:11.070Z] 📝 Header text: 
+[2025-10-30T12:43:21.836Z] 🌐 Current URL is: https://app.milkride.com/admin/order_subscriptions_plans/plans
+[2025-10-30T12:43:21.860Z] ✅ Add New Flex Subscription button is visible
+[2025-10-30T12:43:22.105Z] clicked customer management
+[2025-10-30T12:43:22.129Z] ✅ Orders Tab is visible
+[2025-10-30T12:43:22.738Z] Clicked on Orders Tab
+[2025-10-30T12:43:26.832Z] ✅ Order Page is visible
+[2025-10-30T12:43:26.841Z] 📝 Header text: All Customers Orders
+[2025-10-30T12:43:26.842Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-orders
+[2025-10-30T12:43:26.850Z] ✅ Add Order button is visible
+[2025-10-30T12:43:26.862Z] ✅ Customer Invoice Tab is visible
+[2025-10-30T12:43:27.774Z] Clicked on Customer Invoice Tab
+[2025-10-30T12:43:28.218Z] ✅ Customer Invoice Page is visible
+[2025-10-30T12:43:28.262Z] 📝 Header text: 
                 Invoice List
               
-[2025-10-28T10:13:11.070Z] 🌐 Current URL is: https://app.milkride.com/admin/invoices
-[2025-10-28T10:13:11.149Z] ✅ Dashboard link is visible
-[2025-10-28T10:13:13.788Z] Clicked on Dashboard link
-[2025-10-28T10:13:14.319Z] ✅ Group Pricing Tab is visible
-[2025-10-28T10:13:14.762Z] Clicked on Group Pricing
-[2025-10-28T10:13:16.724Z] Clicked on Customers Groups
-[2025-10-28T10:13:18.008Z] ✅ Customer Group Page is visible
-[2025-10-28T10:13:18.039Z] 📝 Header text: Customer Group List
-[2025-10-28T10:13:18.040Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing/customers
-[2025-10-28T10:13:18.068Z] ✅ Groups Tab is visible
-[2025-10-28T10:13:18.958Z] Clicked on Groups Tab
-[2025-10-28T10:13:19.210Z] ✅ Groups Page is visible
-[2025-10-28T10:13:19.222Z] 📝 Header text: 
+[2025-10-30T12:43:28.263Z] 🌐 Current URL is: https://app.milkride.com/admin/invoices
+[2025-10-30T12:43:28.366Z] ✅ Dashboard link is visible
+[2025-10-30T12:43:31.084Z] Clicked on Dashboard link
+[2025-10-30T12:43:31.085Z] ✅ Completed Customers Management Module Test
+[2025-10-30T12:43:31.156Z] 🚀 Starting Group Pricing Module Test
+[2025-10-30T12:43:31.588Z] Group Pricing Tab is visible
+[2025-10-30T12:43:32.498Z] Clicked on Group Pricing
+[2025-10-30T12:43:34.874Z] Clicked on Customers Groups
+[2025-10-30T12:43:37.310Z] ✅ Customer Group Page is visible
+[2025-10-30T12:43:37.342Z] 📝 Header text: Customer Group List
+[2025-10-30T12:43:37.342Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing/customers
+[2025-10-30T12:43:37.359Z] ✅ Groups Tab is visible
+[2025-10-30T12:43:38.313Z] Clicked on Groups Tab
+[2025-10-30T12:43:38.634Z] ✅ Groups Page is visible
+[2025-10-30T12:43:38.680Z] 📝 Header text: 
                             Customer Group List
-[2025-10-28T10:13:19.222Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing
-[2025-10-28T10:13:19.237Z] ✅ Add Group button is visible
-[2025-10-28T10:13:19.267Z] ✅ Dashboard link is visible
-[2025-10-28T10:13:20.009Z] Clicked on Dashboard link
-[2025-10-28T10:13:20.311Z] ✅ Discount Rules Tab is visible
-[2025-10-28T10:13:20.728Z] Clicked on Discount Rules
-[2025-10-28T10:13:22.302Z] Clicked on Coupons
-[2025-10-28T10:13:23.640Z] ✅ Coupons Page is visible
-[2025-10-28T10:13:23.654Z] 📝 Header text: Coupon List
-[2025-10-28T10:13:23.655Z] 🌐 Current URL is: https://app.milkride.com/admin/coupons
-[2025-10-28T10:13:23.663Z] ✅ Add Coupon button is visible
-[2025-10-28T10:13:23.673Z] ✅ Coupons Usage link is visible
-[2025-10-28T10:13:24.223Z] Clicked on Coupons Usage link
-[2025-10-28T10:13:24.502Z] ✅ Sales Tab is visible
-[2025-10-28T10:13:24.775Z] Clicked on Sales
-[2025-10-28T10:13:25.700Z] Clicked on Sales Dashboard
-[2025-10-28T10:13:28.473Z] ✅ Sales Dashboard Page is visible
-[2025-10-28T10:13:28.489Z] 📝 Header text: Sales Dashboard
-[2025-10-28T10:13:28.489Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/dashboard
-[2025-10-28T10:13:28.500Z] ✅ Product Analysis Tab is visible
-[2025-10-28T10:13:30.960Z] Clicked on Product Analysis Tab
-[2025-10-28T10:13:31.156Z] ✅ Product Analysis Page is visible
-[2025-10-28T10:13:31.217Z] 📝 Header text: Package & Customer Analysis
-[2025-10-28T10:13:31.218Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/analysis
-[2025-10-28T10:13:31.244Z] ✅ Most Selling Packages Tab is visible
-[2025-10-28T10:13:33.624Z] Clicked on Most Selling Packages Tab
-[2025-10-28T10:13:33.852Z] ✅ Most Selling Packages Page is visible
-[2025-10-28T10:13:33.876Z] 📝 Header text: Most Selling Packages
-[2025-10-28T10:13:33.876Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/packages
-[2025-10-28T10:13:33.890Z] ✅ Dashboard link is visible
-[2025-10-28T10:13:35.535Z] Clicked on most selling subscription link
-[2025-10-28T10:13:35.758Z] ✅ Most Selling Subscription Page is visible
-[2025-10-28T10:13:35.777Z] 📝 Header text: Most Selling Subscriptions
-[2025-10-28T10:13:35.778Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/subscriptions
-[2025-10-28T10:13:35.840Z] ✅ Top Customers by Spend Tab is visible
-[2025-10-28T10:13:38.012Z] ✅ Top Customers by Spend Page is visible
-[2025-10-28T10:13:38.021Z] 📝 Header text: Top Customers by Spend
-[2025-10-28T10:13:38.022Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customers
-[2025-10-28T10:13:38.030Z] ✅ Sales by Area Tab is visible
-[2025-10-28T10:13:38.038Z] ✅ Sales by Area Tab is visible
-[2025-10-28T10:13:39.932Z] 🖱️ Clicked on Sales by Area Tab
-[2025-10-28T10:13:39.933Z] Clicked on Sales by Area Tab
-[2025-10-28T10:13:40.155Z] ✅ Sales by Area Page is visible
-[2025-10-28T10:13:40.177Z] 📝 Header text: Sales by Area
-[2025-10-28T10:13:40.183Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/areas
-[2025-10-28T10:13:40.224Z] ✅ Sales by Hub Tab is visible
-[2025-10-28T10:13:42.641Z] Clicked on Sales by Hub Tab
-[2025-10-28T10:13:44.129Z] ✅ Sales by Hub Page is visible
-[2025-10-28T10:13:44.140Z] 📝 Header text: Sales by Hub
-[2025-10-28T10:13:44.140Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/hubs
-[2025-10-28T10:13:44.150Z] ✅ Sales by Delivery Executive Tab is visible
-[2025-10-28T10:13:46.561Z] Clicked on Sales by Delivery Executive Tab
-[2025-10-28T10:13:47.873Z] ✅ Sales by Delivery Executive Page is visible
-[2025-10-28T10:13:47.885Z] 📝 Header text: Sales by Delivery Executive
-[2025-10-28T10:13:47.885Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/delivery-executives
-[2025-10-28T10:13:47.906Z] ✅ Sales by Customer Group Tab is visible
-[2025-10-28T10:13:50.296Z] Clicked on Sales by Customer Group Tab
-[2025-10-28T10:13:50.574Z] ✅ Sales by Customer Group Page is visible
-[2025-10-28T10:13:50.592Z] 📝 Header text: Sales by Customer Group
-[2025-10-28T10:13:50.593Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customer-groups
-[2025-10-28T10:13:52.346Z] Clicked on Dashboard Tab
+[2025-10-30T12:43:38.680Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing
+[2025-10-30T12:43:38.816Z] ✅ Add Group button is visible
+[2025-10-30T12:43:38.838Z] ✅ Dashboard link is visible
+[2025-10-30T12:43:40.056Z] Clicked on Dashboard link
+[2025-10-30T12:43:40.056Z] ✅ Completed Group Pricing Module Test
+[2025-10-30T12:43:40.242Z] 🚀 Starting Discount Rules Module Test
+[2025-10-30T12:43:40.585Z] Discount Rules Tab is visible
+[2025-10-30T12:43:41.411Z] Clicked on Discount Rules
+[2025-10-30T12:43:43.849Z] Clicked on Coupons
+[2025-10-30T12:43:45.348Z] ✅ Coupons Page is visible
+[2025-10-30T12:43:45.359Z] 📝 Header text: Coupon List
+[2025-10-30T12:43:45.360Z] 🌐 Current URL is: https://app.milkride.com/admin/coupons
+[2025-10-30T12:43:45.367Z] ✅ Add Coupon button is visible
+[2025-10-30T12:43:45.379Z] ✅ Coupons Usage link is visible
+[2025-10-30T12:43:45.916Z] Clicked on Coupons Usage link
+[2025-10-30T12:43:45.916Z] ✅ Completed Discount Rules Module Test
+[2025-10-30T12:43:45.973Z] 🚀 Starting Sales Module Test
+[2025-10-30T12:43:46.219Z] Sales Tab is visible
+[2025-10-30T12:43:46.660Z] Clicked on Sales
+[2025-10-30T12:43:47.289Z] Clicked on Sales Dashboard
+[2025-10-30T12:44:10.667Z] ✅ Sales Dashboard Page is visible
+[2025-10-30T12:44:10.683Z] 📝 Header text: Sales Dashboard
+[2025-10-30T12:44:10.684Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/dashboard
+[2025-10-30T12:44:10.699Z] ✅ Product Analysis Tab is visible
+[2025-10-30T12:44:13.261Z] Clicked on Product Analysis Tab
+[2025-10-30T12:44:13.462Z] ✅ Product Analysis Page is visible
+[2025-10-30T12:44:13.497Z] 📝 Header text: Package & Customer Analysis
+[2025-10-30T12:44:13.498Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/analysis
+[2025-10-30T12:44:13.789Z] ✅ Most Selling Packages Tab is visible
+[2025-10-30T12:44:16.379Z] Clicked on Most Selling Packages Tab
+[2025-10-30T12:44:16.767Z] ✅ Most Selling Packages Page is visible
+[2025-10-30T12:44:16.804Z] 📝 Header text: Most Selling Packages
+[2025-10-30T12:44:16.808Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/packages
+[2025-10-30T12:44:16.853Z] ✅ Dashboard link is visible
+[2025-10-30T12:44:19.199Z] Clicked on most selling subscription link
+[2025-10-30T12:44:19.579Z] ✅ Most Selling Subscription Page is visible
+[2025-10-30T12:44:19.615Z] 📝 Header text: Most Selling Subscriptions
+[2025-10-30T12:44:19.617Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/subscriptions
+[2025-10-30T12:44:19.762Z] ✅ Top Customers by Spend Tab is visible
+[2025-10-30T12:44:22.044Z] ✅ Top Customers by Spend Page is visible
+[2025-10-30T12:44:22.090Z] 📝 Header text: Top Customers by Spend
+[2025-10-30T12:44:22.091Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customers
+[2025-10-30T12:44:22.114Z] ✅ Sales by Area Tab is visible
+[2025-10-30T12:44:24.099Z] 🖱️ Clicked on Sales by Area Tab
+[2025-10-30T12:44:29.073Z] ✅ Sales by Area Page is visible
+[2025-10-30T12:44:29.085Z] 📝 Header text: Sales by Area
+[2025-10-30T12:44:29.086Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/areas
+[2025-10-30T12:44:29.111Z] ✅ Sales by Hub Tab is visible
+[2025-10-30T12:44:31.608Z] Clicked on Sales by Hub Tab
+[2025-10-30T12:44:33.576Z] ✅ Sales by Hub Page is visible
+[2025-10-30T12:44:33.591Z] 📝 Header text: Sales by Hub
+[2025-10-30T12:44:33.592Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/hubs
+[2025-10-30T12:44:33.606Z] ✅ Sales by Delivery Executive Tab is visible
+[2025-10-30T12:44:36.545Z] Clicked on Sales by Delivery Executive Tab
+[2025-10-30T12:44:37.822Z] ✅ Sales by Delivery Executive Page is visible
+[2025-10-30T12:44:37.844Z] 📝 Header text: Sales by Delivery Executive
+[2025-10-30T12:44:37.844Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/delivery-executives
+[2025-10-30T12:44:37.861Z] ✅ Sales by Customer Group Tab is visible
+[2025-10-30T12:44:40.367Z] Clicked on Sales by Customer Group Tab
+[2025-10-30T12:44:40.606Z] ✅ Sales by Customer Group Page is visible
+[2025-10-30T12:44:40.646Z] 📝 Header text: Sales by Customer Group
+[2025-10-30T12:44:40.647Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customer-groups
+[2025-10-30T12:44:40.667Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:44:43.269Z] Clicked on Dashboard Tab
+[2025-10-30T12:44:43.270Z] ✅ Completed Sales Module Test
+[2025-10-30T12:44:43.375Z] 🚀 Starting CRM Module Test
+[2025-10-30T12:44:43.667Z] CRM Tab is visible
+[2025-10-30T12:44:44.334Z] Clicked on CRM Tab
+[2025-10-30T12:44:44.482Z] CRM Dashboard option is visible
+[2025-10-30T12:44:46.497Z] Clicked on CRM Dashboard
+[2025-10-30T12:44:47.617Z] 📝 Header text: CRM Dashboard
+[2025-10-30T12:44:47.618Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/dashboard
+[2025-10-30T12:44:47.639Z]  Campaigns option is visible
+[2025-10-30T12:44:48.095Z] Clicked on Campaigns
+[2025-10-30T12:44:49.323Z] 📝 Header text: Campaigns
+[2025-10-30T12:44:49.324Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/campaigns
+[2025-10-30T12:44:49.341Z] Add Campaign button is visible
+[2025-10-30T12:44:49.361Z] Leads option is visible
+[2025-10-30T12:44:49.964Z] Clicked on Leads
+[2025-10-30T12:44:51.549Z] 📝 Header text: Leads
+[2025-10-30T12:44:51.550Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/leads
+[2025-10-30T12:44:51.562Z] Add Lead button is visible
+[2025-10-30T12:44:51.575Z] Call Logs option is visible
+[2025-10-30T12:44:52.185Z] Clicked on Call Logs
+[2025-10-30T12:44:53.430Z] 📝 Header text: Call Logs
+[2025-10-30T12:44:53.430Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/call-logs
+[2025-10-30T12:44:53.442Z] Follow-ups option is visible
+[2025-10-30T12:44:53.898Z] Clicked on Follow-ups
+[2025-10-30T12:44:55.104Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/follow-ups
+[2025-10-30T12:44:55.132Z] Follow-ups header is visible
+[2025-10-30T12:44:55.142Z] ✅ Completed CRM Module Test
+[2025-10-30T12:44:55.193Z] 🚀 Starting Churn Management Module Test
+[2025-10-30T12:44:55.208Z] Churn Management Tab is visible
+[2025-10-30T12:44:55.333Z] Clicked on Churn Management Tab
+[2025-10-30T12:44:55.351Z] At-Risk Customers option is visible
+[2025-10-30T12:44:56.059Z] Clicked on At-Risk Customers
+[2025-10-30T12:44:58.066Z] 📝 Header text: At-Risk Customers
+[2025-10-30T12:44:58.066Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/at-risk
+[2025-10-30T12:44:58.076Z] Subscription Changes option is visible
+[2025-10-30T12:44:59.014Z] Clicked on Subscription Changes
+[2025-10-30T12:45:00.298Z] 📝 Header text: Subscription Activity
+[2025-10-30T12:45:00.298Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/subscription-changes
+[2025-10-30T12:45:00.313Z] Abandoned Carts option is visible
+[2025-10-30T12:45:00.877Z] Clicked on Abandoned Carts
+[2025-10-30T12:45:04.331Z] 📝 Header text: Abandoned Carts
+[2025-10-30T12:45:04.332Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/abandoned-carts
+[2025-10-30T12:45:04.344Z] Call Logs option is visible
+[2025-10-30T12:45:05.126Z] Clicked on Call Logs
+[2025-10-30T12:45:06.565Z] 📝 Header text: Churn Call Logs
+[2025-10-30T12:45:06.565Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/call-logs
+[2025-10-30T12:45:06.579Z] Follow-ups option is visible
+[2025-10-30T12:45:07.252Z] Clicked on Follow-ups
+[2025-10-30T12:45:09.589Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/follow-ups
+[2025-10-30T12:45:09.631Z] Follow-ups header is visible
+[2025-10-30T12:45:09.632Z] ✅ Completed Churn Management Module Test
+[2025-10-30T12:45:09.712Z] 🚀 Starting Complaint System Module Test
+[2025-10-30T12:45:09.738Z] Complaint System Tab is visible
+[2025-10-30T12:45:09.918Z] Clicked on Complaint System Tab
+[2025-10-30T12:45:09.994Z] All Complaints option is visible
+[2025-10-30T12:45:11.092Z] Clicked on All Complaints
+[2025-10-30T12:45:13.048Z] 📝 Header text: Complaint Management
+[2025-10-30T12:45:13.048Z] 🌐 Current URL is: https://app.milkride.com/admin/complaint-managements
+[2025-10-30T12:45:13.071Z] Refunds Request option is visible
+[2025-10-30T12:45:13.953Z] Clicked on Refunds Request
+[2025-10-30T12:45:15.858Z] 📝 Header text: 
+                            Refund Requests
+[2025-10-30T12:45:15.859Z] 🌐 Current URL is: https://app.milkride.com/admin/refund-requests
+[2025-10-30T12:45:15.859Z] ✅ Completed Complaint System Module Test
+[2025-10-30T12:45:15.918Z] 🚀 Starting Product Catalog Module Test
+[2025-10-30T12:45:15.932Z] Product Catalog Tab is visible
+[2025-10-30T12:45:16.097Z] Clicked on Product Catalog Tab
+[2025-10-30T12:45:16.155Z] Categories option is visible
+[2025-10-30T12:45:17.640Z] Clicked on Categories
+[2025-10-30T12:45:20.596Z] 📝 Header text: 
+                            Categories List
+[2025-10-30T12:45:20.599Z] 🌐 Current URL is: https://app.milkride.com/admin/categories
+[2025-10-30T12:45:20.625Z] Add Category button is visible
+[2025-10-30T12:45:20.653Z] Brand option is visible
+[2025-10-30T12:45:22.185Z] Clicked on Brand
+[2025-10-30T12:45:24.294Z] 📝 Header text: Brand
+                            List
+[2025-10-30T12:45:24.295Z] 🌐 Current URL is: https://app.milkride.com/admin/brands
+[2025-10-30T12:45:24.303Z] Add Brand button is visible
+[2025-10-30T12:45:24.312Z] Products option is visible
+[2025-10-30T12:45:26.015Z] Clicked on Products
+[2025-10-30T12:45:28.282Z] 📝 Header text: Product
+                            List
+[2025-10-30T12:45:28.283Z] 🌐 Current URL is: https://app.milkride.com/admin/products
+[2025-10-30T12:45:28.298Z] Add Product button is visible
+[2025-10-30T12:45:28.310Z] Product Ordering option is visible
+[2025-10-30T12:45:28.865Z] Clicked on Product Ordering
+[2025-10-30T12:45:30.920Z] 📝 Header text: Product Ordering
+[2025-10-30T12:45:30.921Z] 🌐 Current URL is: https://app.milkride.com/admin/products/ordering
+[2025-10-30T12:45:30.936Z] Quick Product Update option is visible
+[2025-10-30T12:45:32.298Z] Clicked on Quick Product Update
+[2025-10-30T12:45:33.744Z] 📝 Header text: Product
+                            List
+[2025-10-30T12:45:33.746Z] 🌐 Current URL is: https://app.milkride.com/admin/bulkProducts/bulkProducts
+[2025-10-30T12:45:33.873Z] Settings option is visible
+[2025-10-30T12:45:35.526Z] Clicked on Settings
+[2025-10-30T12:45:36.529Z] 📝 Header text: 
+                            Payment Modes
+                            
+                        
+[2025-10-30T12:45:36.529Z] 🌐 Current URL is: https://app.milkride.com/admin/setting/payment-modes
+[2025-10-30T12:45:36.529Z] ✅ Completed Product Catalog Module Test
+[2025-10-30T12:45:36.579Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:45:36.806Z] Attributestab is visible
+[2025-10-30T12:45:37.723Z] 📝 Header text: Attribute List
+[2025-10-30T12:45:37.723Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:45:37.760Z] Add Category button is visible
+[2025-10-30T12:45:37.840Z] Working day tab is visible
+[2025-10-30T12:45:38.599Z] click on Workingday
+[2025-10-30T12:45:38.860Z] 📝 Header text: Working Days
+[2025-10-30T12:45:38.860Z] 🌐 Current URL is: https://app.milkride.com/admin/working_days
+[2025-10-30T12:45:38.896Z] PlanSolt is visible
+[2025-10-30T12:45:39.731Z] 📝 Header text: 
+                     Plan Slots List
+[2025-10-30T12:45:39.732Z] 🌐 Current URL is: https://app.milkride.com/admin/planslot
+[2025-10-30T12:45:39.732Z] ✅ Completed FlexProduct Module Test
+[2025-10-30T12:53:41.276Z] Filled username
+[2025-10-30T12:53:41.332Z] Filled Password
+[2025-10-30T12:53:42.821Z] Clicked on login button
+[2025-10-30T12:53:47.700Z] Login Successful and Dashboard is visible
+[2025-10-30T12:53:47.701Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T12:53:47.842Z] 🚀 Starting Hub Manager Module Test
+[2025-10-30T12:53:48.043Z] Clicked on Hub Manager
+[2025-10-30T12:53:51.052Z] Clicked on All Hubs
+[2025-10-30T12:53:52.508Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs
+[2025-10-30T12:53:52.545Z] Hub List Page is visible
+[2025-10-30T12:53:52.567Z] Add Hub Button is visible
+[2025-10-30T12:53:52.591Z] First Hub is visible
+[2025-10-30T12:53:52.644Z] First Hub name is: Rural Bloom CH
+[2025-10-30T12:53:54.308Z] Clicked on First Hub
+[2025-10-30T12:53:56.137Z] 🌐 Current URL is: https://app.milkride.com/admin/hubs/show/20/info
+[2025-10-30T12:53:56.170Z] ✅ Hub Details Header is visible
+[2025-10-30T12:53:56.188Z] 📝 Header text: Hub:
+                            Rural Bloom CH
+                        
+[2025-10-30T12:53:56.208Z] ✅ Accounts Tab is visible
+[2025-10-30T12:53:57.696Z] Clicked on Accounts Tab
+[2025-10-30T12:53:58.694Z] ✅ Locations Tab is visible
+[2025-10-30T12:54:00.488Z] Clicked on Locations Tab
+[2025-10-30T12:54:01.845Z] ✅ Products Tab is visible
+[2025-10-30T12:54:03.607Z] Clicked on Products Tab
+[2025-10-30T12:54:05.071Z] ✅ Contacts Tab is visible
+[2025-10-30T12:54:06.663Z] Clicked on Contacts Tab
+[2025-10-30T12:54:07.478Z] ✅ Documents Tab is visible
+[2025-10-30T12:54:08.799Z] Clicked on Documents Tab
+[2025-10-30T12:54:09.699Z] ✅ Disable Area Tab is visible
+[2025-10-30T12:54:11.360Z] Clicked on Disable Area Tab
+[2025-10-30T12:54:12.219Z] ✅ Payment Gateway Tab is visible
+[2025-10-30T12:54:13.918Z] Clicked on Payment Gateway Tab
+[2025-10-30T12:54:14.809Z] ✅ Batches Tab is visible
+[2025-10-30T12:54:16.558Z] Clicked on Batches Tab
+[2025-10-30T12:54:17.037Z] ✅ Dashboard link is visible
+[2025-10-30T12:54:17.054Z] ✅ Dashboard link is visible
+[2025-10-30T12:54:17.761Z] Clicked on Dashboard link
+[2025-10-30T12:54:17.761Z] ✅ Completed Hub Manager Module Test
+[2025-10-30T12:54:17.864Z] 🚀 Starting Delivery Module Test
+[2025-10-30T12:54:18.193Z] Delivery Tab is visible
+[2025-10-30T12:54:18.700Z] Clicked on Delivery
+[2025-10-30T12:54:21.181Z] Clicked on Delivery Dashboard
+[2025-10-30T12:54:22.333Z] 🌐 Current URL is: https://app.milkride.com/admin/delivery/delivery-dashboard
+[2025-10-30T12:54:22.399Z] Delivery Dashboard Page is visible
+[2025-10-30T12:54:22.424Z] Header is: Delivery Dashboard
+[2025-10-30T12:54:22.425Z] Completed Delivery Page verification
+[2025-10-30T12:54:22.443Z] ✅ Delivery Transfer Tab is visible
+[2025-10-30T12:54:23.041Z] Clicked on Delivery Transfer Tab
+[2025-10-30T12:54:24.009Z] 🌐 Delivery Transfer Tab URL: https://app.milkride.com/admin/delivery-transfer
+[2025-10-30T12:54:24.042Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:54:24.111Z] ✅ Optimize Route Tab is visible
+[2025-10-30T12:54:25.158Z] Clicked on Optimize Route Tab
+[2025-10-30T12:54:26.676Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
+[2025-10-30T12:54:26.725Z] ✅ Manual Route Tab is visible
+[2025-10-30T12:54:27.941Z] Clicked on Manual Route Tab
+[2025-10-30T12:54:29.177Z] 🌐 Manual Route Tab URL: https://app.milkride.com/admin/delivery/manual-route
+[2025-10-30T12:54:29.222Z] ✅ Optimize Route Tab is visible
+[2025-10-30T12:54:30.461Z] Clicked on Optimize Route Tab
+[2025-10-30T12:54:32.016Z] 🌐 Optimize Route Tab URL: https://app.milkride.com/admin/delivery/optimize-route
+[2025-10-30T12:54:32.056Z] ✅ Order History Tab is visible
+[2025-10-30T12:54:32.993Z] Clicked on Order History Tab
+[2025-10-30T12:54:34.689Z] 🌐 Order History Tab URL: https://app.milkride.com/admin/delivery/order-history
+[2025-10-30T12:54:34.735Z] ✅ Route Assignment Tab is visible
+[2025-10-30T12:54:35.331Z] Clicked on Route Assignment Tab
+[2025-10-30T12:54:36.306Z] 🌐 Route Assignment Tab URL: https://app.milkride.com/admin/delivery/route-assignment
+[2025-10-30T12:54:36.374Z] ✅ Master Route Tab is visible
+[2025-10-30T12:54:37.881Z] Clicked on Master Route Tab
+[2025-10-30T12:54:38.991Z] 🌐 Master Route Tab URL: https://app.milkride.com/admin/master-delivery/master-route
+[2025-10-30T12:54:39.037Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:54:39.876Z] Clicked on Dashboard
+[2025-10-30T12:54:39.876Z] ✅ Completed Delivery Module Test
+[2025-10-30T12:54:40.000Z] 🚀 Starting Inventory Module Test
+[2025-10-30T12:54:40.353Z] Inventory Tab is visible
+[2025-10-30T12:54:41.252Z] Clicked on Inventory
+[2025-10-30T12:54:43.584Z] Clicked on Warehouse
+[2025-10-30T12:54:44.854Z] 🌐 Current URL is: https://app.milkride.com/admin/warehouse
+[2025-10-30T12:54:44.999Z] Header is: 
+                            Warehouse List
+[2025-10-30T12:54:45.026Z] Add Warehouse Button is visible
+[2025-10-30T12:54:45.604Z] Clicked on Suppliers Tab
+[2025-10-30T12:54:46.949Z] 🌐 Current URL is: https://app.milkride.com/admin/supplier
+[2025-10-30T12:54:47.018Z] Header is: 
+                            Supplier List
+[2025-10-30T12:54:47.033Z] Add Supplier Button is visible
+[2025-10-30T12:54:47.507Z] Clicked on Purchase Inventory Tab
+[2025-10-30T12:54:48.951Z] 🌐 Current URL is: https://app.milkride.com/admin/purchase
+[2025-10-30T12:54:49.019Z] Header is: 
+                            Purchase List
+[2025-10-30T12:54:49.044Z] Add Purchase Inventory Button is visible
+[2025-10-30T12:54:49.546Z] Clicked on Batches Tab
+[2025-10-30T12:54:51.265Z] 🌐 Current URL is: https://app.milkride.com/admin/batch/list
+[2025-10-30T12:54:51.308Z] Header is: Batch List
+[2025-10-30T12:54:52.058Z] Clicked on Thresholds Tab
+[2025-10-30T12:54:53.300Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/thresholds
+[2025-10-30T12:54:53.359Z] Header is: 
+                        Inventory Threshold Settings
+                    
+[2025-10-30T12:54:53.374Z] Settings Tab is visible
+[2025-10-30T12:54:53.877Z] Clicked on Settings Tab
+[2025-10-30T12:54:54.766Z] 🌐 Current URL is: https://app.milkride.com/admin/inventory/settings
+[2025-10-30T12:54:54.858Z] Header is: 
+                        Inventory Threshold Settings
+                    
+[2025-10-30T12:54:55.587Z] Clicked on Dashboard Tab
+[2025-10-30T12:55:01.875Z] ✅ Completed Inventory Module Test
+[2025-10-30T12:55:01.918Z] 🚀 Starting Notifications Module Test
+[2025-10-30T12:55:01.974Z] Notifications Tab is visible
+[2025-10-30T12:55:02.146Z] Clicked on Notifications
+[2025-10-30T12:55:03.443Z] Clicked on Push Notifications
+[2025-10-30T12:55:04.553Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications
+[2025-10-30T12:55:04.592Z] Push Notification Page is visible
+[2025-10-30T12:55:04.604Z] Header is: Push
+                            Notifications List
+[2025-10-30T12:55:04.623Z] New Notification Button is visible on Push Notification Page
+[2025-10-30T12:55:05.145Z] Clicked on New Arrival Button
+[2025-10-30T12:55:06.442Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/new-arrival-products
+[2025-10-30T12:55:06.480Z] New Arrival Products Notification Page is visible
+[2025-10-30T12:55:06.497Z] Header is: 
+                            New Arrival Products Notification
+[2025-10-30T12:55:06.512Z] Send New Notification Button is visible on New Arrival Products Notification Page
+[2025-10-30T12:55:07.140Z] Clicked on Templates Tab
+[2025-10-30T12:55:08.245Z] 🌐 Current URL is: https://app.milkride.com/admin/notifications/templates
+[2025-10-30T12:55:08.300Z] Notification Templates List Page is visible
+[2025-10-30T12:55:08.337Z] Header is: 
+                            Notification Templates List
+[2025-10-30T12:55:08.349Z] Add Templates Button is visible on Notification Templates List Page
+[2025-10-30T12:55:09.011Z] Navigated back to Dashboard from Templates Page
+[2025-10-30T12:55:14.425Z] ✅ Completed Notifications Module Test
+[2025-10-30T12:55:14.459Z] 🚀 Starting Billing History Module Test
+[2025-10-30T12:55:14.512Z] Billing & History Tab is visible
+[2025-10-30T12:55:14.621Z] Clicked on Billing & History
+[2025-10-30T12:55:15.210Z] Clicked on Invoices
+[2025-10-30T12:55:16.490Z] ✅ Invoices Page is visible
+[2025-10-30T12:55:16.491Z] 🌐 Current URL is: https://app.milkride.com/admin/merchants/invoices
+[2025-10-30T12:55:16.504Z] ✅ Dashboard is visible
+[2025-10-30T12:55:17.271Z] Clicked on Dashboard
+[2025-10-30T12:55:22.947Z] ✅ Completed Billing History Module Test
+[2025-10-30T12:55:23.005Z] 🚀 Starting Customers Management Module Test
+[2025-10-30T12:55:23.106Z] Customer Management Tab is visible
+[2025-10-30T12:55:23.256Z] Clicked on Customer Management
+[2025-10-30T12:55:24.079Z] Clicked on Customers
+[2025-10-30T12:55:26.246Z] ✅ Customers Page is visible
+[2025-10-30T12:55:26.258Z] 📝 Header text: Customers
+                                    
+[2025-10-30T12:55:26.258Z] 🌐 Current URL is: https://app.milkride.com/admin/customers
+[2025-10-30T12:55:26.269Z] ✅ Add Customer button is visible
+[2025-10-30T12:55:26.278Z] ✅ Customer Address Request option is visible
+[2025-10-30T12:55:26.879Z] Clicked on Customer Address Request
+[2025-10-30T12:55:28.519Z] ✅ Customer Address Request Page is visible
+[2025-10-30T12:55:28.532Z] 📝 Header text: 
+                        Address Change Requests
+[2025-10-30T12:55:28.533Z] 🌐 Current URL is: https://app.milkride.com/admin/address-requests
+[2025-10-30T12:55:28.689Z] clicked customer management
+[2025-10-30T12:55:28.730Z] ✅ Subscriptions Tab is visible
+[2025-10-30T12:55:29.377Z] Clicked on Subscriptions Tab
+[2025-10-30T12:55:32.523Z] ✅ Subscriptions Page is visible
+[2025-10-30T12:55:32.537Z] 📝 Header text: All Customer Subscriptions
+[2025-10-30T12:55:32.537Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-subscriptions
+[2025-10-30T12:55:32.548Z] ✅ Add Subscription button is visible
+[2025-10-30T12:55:32.557Z] ✅ Flex Subscription option is visible
+[2025-10-30T12:55:34.552Z] Clicked on Flex Subscription option
+[2025-10-30T12:55:37.673Z] ✅ Flex Subscription Page is visible
+[2025-10-30T12:55:37.692Z] 📝 Header text: 
+                        FlexProduct Plans
+                    
+[2025-10-30T12:55:37.692Z] 🌐 Current URL is: https://app.milkride.com/admin/order_subscriptions_plans/plans
+[2025-10-30T12:55:37.707Z] ✅ Add New Flex Subscription button is visible
+[2025-10-30T12:55:37.866Z] clicked customer management
+[2025-10-30T12:55:37.912Z] ✅ Orders Tab is visible
+[2025-10-30T12:55:38.640Z] Clicked on Orders Tab
+[2025-10-30T12:55:43.306Z] ✅ Order Page is visible
+[2025-10-30T12:55:43.320Z] 📝 Header text: All Customers Orders
+[2025-10-30T12:55:43.320Z] 🌐 Current URL is: https://app.milkride.com/admin/customers/all-orders
+[2025-10-30T12:55:43.333Z] ✅ Add Order button is visible
+[2025-10-30T12:55:43.342Z] ✅ Customer Invoice Tab is visible
+[2025-10-30T12:55:44.123Z] Clicked on Customer Invoice Tab
+[2025-10-30T12:55:44.423Z] ✅ Customer Invoice Page is visible
+[2025-10-30T12:55:44.484Z] 📝 Header text: 
+                Invoice List
+              
+[2025-10-30T12:55:44.484Z] 🌐 Current URL is: https://app.milkride.com/admin/invoices
+[2025-10-30T12:55:44.520Z] ✅ Dashboard link is visible
+[2025-10-30T12:55:47.268Z] Clicked on Dashboard link
+[2025-10-30T12:55:47.268Z] ✅ Completed Customers Management Module Test
+[2025-10-30T12:55:47.307Z] 🚀 Starting Group Pricing Module Test
+[2025-10-30T12:55:47.619Z] Group Pricing Tab is visible
+[2025-10-30T12:55:48.179Z] Clicked on Group Pricing
+[2025-10-30T12:55:50.271Z] Clicked on Customers Groups
+[2025-10-30T12:55:51.686Z] ✅ Customer Group Page is visible
+[2025-10-30T12:55:51.717Z] 📝 Header text: Customer Group List
+[2025-10-30T12:55:51.717Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing/customers
+[2025-10-30T12:55:51.733Z] ✅ Groups Tab is visible
+[2025-10-30T12:55:52.809Z] Clicked on Groups Tab
+[2025-10-30T12:55:53.022Z] ✅ Groups Page is visible
+[2025-10-30T12:55:53.049Z] 📝 Header text: 
+                            Customer Group List
+[2025-10-30T12:55:53.049Z] 🌐 Current URL is: https://app.milkride.com/admin/group-pricing
+[2025-10-30T12:55:53.067Z] ✅ Add Group button is visible
+[2025-10-30T12:55:53.099Z] ✅ Dashboard link is visible
+[2025-10-30T12:55:54.111Z] Clicked on Dashboard link
+[2025-10-30T12:55:54.111Z] ✅ Completed Group Pricing Module Test
+[2025-10-30T12:55:54.213Z] 🚀 Starting Discount Rules Module Test
+[2025-10-30T12:55:54.499Z] Discount Rules Tab is visible
+[2025-10-30T12:55:55.099Z] Clicked on Discount Rules
+[2025-10-30T12:55:57.601Z] Clicked on Coupons
+[2025-10-30T12:55:59.217Z] ✅ Coupons Page is visible
+[2025-10-30T12:55:59.223Z] 📝 Header text: Coupon List
+[2025-10-30T12:55:59.223Z] 🌐 Current URL is: https://app.milkride.com/admin/coupons
+[2025-10-30T12:55:59.233Z] ✅ Add Coupon button is visible
+[2025-10-30T12:55:59.247Z] ✅ Coupons Usage link is visible
+[2025-10-30T12:55:59.704Z] Clicked on Coupons Usage link
+[2025-10-30T12:55:59.705Z] ✅ Completed Discount Rules Module Test
+[2025-10-30T12:55:59.752Z] 🚀 Starting Sales Module Test
+[2025-10-30T12:55:59.990Z] Sales Tab is visible
+[2025-10-30T12:56:00.341Z] Clicked on Sales
+[2025-10-30T12:56:01.167Z] Clicked on Sales Dashboard
+[2025-10-30T12:56:23.622Z] ✅ Sales Dashboard Page is visible
+[2025-10-30T12:56:23.637Z] 📝 Header text: Sales Dashboard
+[2025-10-30T12:56:23.638Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/dashboard
+[2025-10-30T12:56:23.654Z] ✅ Product Analysis Tab is visible
+[2025-10-30T12:56:26.235Z] Clicked on Product Analysis Tab
+[2025-10-30T12:56:26.630Z] ✅ Product Analysis Page is visible
+[2025-10-30T12:56:26.653Z] 📝 Header text: Package & Customer Analysis
+[2025-10-30T12:56:26.654Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/analysis
+[2025-10-30T12:56:26.716Z] ✅ Most Selling Packages Tab is visible
+[2025-10-30T12:56:29.237Z] Clicked on Most Selling Packages Tab
+[2025-10-30T12:56:29.541Z] ✅ Most Selling Packages Page is visible
+[2025-10-30T12:56:29.639Z] 📝 Header text: Most Selling Packages
+[2025-10-30T12:56:29.639Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/packages
+[2025-10-30T12:56:29.689Z] ✅ Dashboard link is visible
+[2025-10-30T12:56:31.838Z] Clicked on most selling subscription link
+[2025-10-30T12:56:32.129Z] ✅ Most Selling Subscription Page is visible
+[2025-10-30T12:56:32.254Z] 📝 Header text: Most Selling Subscriptions
+[2025-10-30T12:56:32.255Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/subscriptions
+[2025-10-30T12:56:32.304Z] ✅ Top Customers by Spend Tab is visible
+[2025-10-30T12:56:34.573Z] ✅ Top Customers by Spend Page is visible
+[2025-10-30T12:56:34.586Z] 📝 Header text: Top Customers by Spend
+[2025-10-30T12:56:34.586Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customers
+[2025-10-30T12:56:34.595Z] ✅ Sales by Area Tab is visible
+[2025-10-30T12:56:37.186Z] 🖱️ Clicked on Sales by Area Tab
+[2025-10-30T12:56:41.970Z] ✅ Sales by Area Page is visible
+[2025-10-30T12:56:41.978Z] 📝 Header text: Sales by Area
+[2025-10-30T12:56:41.979Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/areas
+[2025-10-30T12:56:41.990Z] ✅ Sales by Hub Tab is visible
+[2025-10-30T12:56:44.485Z] Clicked on Sales by Hub Tab
+[2025-10-30T12:56:46.434Z] ✅ Sales by Hub Page is visible
+[2025-10-30T12:56:46.448Z] 📝 Header text: Sales by Hub
+[2025-10-30T12:56:46.448Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/hubs
+[2025-10-30T12:56:46.461Z] ✅ Sales by Delivery Executive Tab is visible
+[2025-10-30T12:56:48.919Z] Clicked on Sales by Delivery Executive Tab
+[2025-10-30T12:56:50.317Z] ✅ Sales by Delivery Executive Page is visible
+[2025-10-30T12:56:50.332Z] 📝 Header text: Sales by Delivery Executive
+[2025-10-30T12:56:50.333Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/delivery-executives
+[2025-10-30T12:56:50.345Z] ✅ Sales by Customer Group Tab is visible
+[2025-10-30T12:56:52.900Z] Clicked on Sales by Customer Group Tab
+[2025-10-30T12:56:53.134Z] ✅ Sales by Customer Group Page is visible
+[2025-10-30T12:56:53.154Z] 📝 Header text: Sales by Customer Group
+[2025-10-30T12:56:53.154Z] 🌐 Current URL is: https://app.milkride.com/admin/sales/customer-groups
+[2025-10-30T12:56:53.182Z] ✅ Dashboard Tab is visible
+[2025-10-30T12:56:55.002Z] Clicked on Dashboard Tab
+[2025-10-30T12:56:55.002Z] ✅ Completed Sales Module Test
+[2025-10-30T12:56:55.142Z] 🚀 Starting CRM Module Test
+[2025-10-30T12:56:55.455Z] CRM Tab is visible
+[2025-10-30T12:56:56.851Z] Clicked on CRM Tab
+[2025-10-30T12:56:56.887Z] CRM Dashboard option is visible
+[2025-10-30T12:56:58.412Z] Clicked on CRM Dashboard
+[2025-10-30T12:56:59.503Z] 📝 Header text: CRM Dashboard
+[2025-10-30T12:56:59.503Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/dashboard
+[2025-10-30T12:56:59.521Z]  Campaigns option is visible
+[2025-10-30T12:56:59.992Z] Clicked on Campaigns
+[2025-10-30T12:57:01.270Z] 📝 Header text: Campaigns
+[2025-10-30T12:57:01.270Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/campaigns
+[2025-10-30T12:57:01.284Z] Add Campaign button is visible
+[2025-10-30T12:57:01.298Z] Leads option is visible
+[2025-10-30T12:57:01.872Z] Clicked on Leads
+[2025-10-30T12:57:03.298Z] 📝 Header text: Leads
+[2025-10-30T12:57:03.299Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/leads
+[2025-10-30T12:57:03.304Z] Add Lead button is visible
+[2025-10-30T12:57:03.330Z] Call Logs option is visible
+[2025-10-30T12:57:03.789Z] Clicked on Call Logs
+[2025-10-30T12:57:05.062Z] 📝 Header text: Call Logs
+[2025-10-30T12:57:05.062Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/call-logs
+[2025-10-30T12:57:05.088Z] Follow-ups option is visible
+[2025-10-30T12:57:05.661Z] Clicked on Follow-ups
+[2025-10-30T12:57:06.995Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/follow-ups
+[2025-10-30T12:57:07.050Z] Follow-ups header is visible
+[2025-10-30T12:57:07.051Z] ✅ Completed CRM Module Test
+[2025-10-30T12:57:07.140Z] 🚀 Starting Churn Management Module Test
+[2025-10-30T12:57:07.162Z] Churn Management Tab is visible
+[2025-10-30T12:57:07.355Z] Clicked on Churn Management Tab
+[2025-10-30T12:57:07.399Z] At-Risk Customers option is visible
+[2025-10-30T12:57:08.057Z] Clicked on At-Risk Customers
+[2025-10-30T12:57:10.340Z] 📝 Header text: At-Risk Customers
+[2025-10-30T12:57:10.340Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/at-risk
+[2025-10-30T12:57:10.353Z] Subscription Changes option is visible
+[2025-10-30T12:57:11.031Z] Clicked on Subscription Changes
+[2025-10-30T12:57:12.469Z] 📝 Header text: Subscription Activity
+[2025-10-30T12:57:12.469Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/subscription-changes
+[2025-10-30T12:57:12.492Z] Abandoned Carts option is visible
+[2025-10-30T12:57:12.982Z] Clicked on Abandoned Carts
+[2025-10-30T12:57:15.052Z] 📝 Header text: Abandoned Carts
+[2025-10-30T12:57:15.052Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/abandoned-carts
+[2025-10-30T12:57:15.079Z] Call Logs option is visible
+[2025-10-30T12:57:15.530Z] Clicked on Call Logs
+[2025-10-30T12:57:16.985Z] 📝 Header text: Churn Call Logs
+[2025-10-30T12:57:16.985Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/call-logs
+[2025-10-30T12:57:17.010Z] Follow-ups option is visible
+[2025-10-30T12:57:17.647Z] Clicked on Follow-ups
+[2025-10-30T12:57:19.029Z] 🌐 Current URL is: https://app.milkride.com/admin/crm/churns/follow-ups
+[2025-10-30T12:57:19.066Z] Follow-ups header is visible
+[2025-10-30T12:57:19.067Z] ✅ Completed Churn Management Module Test
+[2025-10-30T12:57:19.127Z] 🚀 Starting Complaint System Module Test
+[2025-10-30T12:57:19.150Z] Complaint System Tab is visible
+[2025-10-30T12:57:19.361Z] Clicked on Complaint System Tab
+[2025-10-30T12:57:19.414Z] All Complaints option is visible
+[2025-10-30T12:57:19.949Z] Clicked on All Complaints
+[2025-10-30T12:57:21.419Z] 📝 Header text: Complaint Management
+[2025-10-30T12:57:21.419Z] 🌐 Current URL is: https://app.milkride.com/admin/complaint-managements
+[2025-10-30T12:57:21.430Z] Refunds Request option is visible
+[2025-10-30T12:57:21.882Z] Clicked on Refunds Request
+[2025-10-30T12:57:23.365Z] 📝 Header text: 
+                            Refund Requests
+[2025-10-30T12:57:23.365Z] 🌐 Current URL is: https://app.milkride.com/admin/refund-requests
+[2025-10-30T12:57:23.365Z] ✅ Completed Complaint System Module Test
+[2025-10-30T12:57:23.400Z] 🚀 Starting Product Catalog Module Test
+[2025-10-30T12:57:23.419Z] Product Catalog Tab is visible
+[2025-10-30T12:57:23.551Z] Clicked on Product Catalog Tab
+[2025-10-30T12:57:23.573Z] Categories option is visible
+[2025-10-30T12:57:24.529Z] Clicked on Categories
+[2025-10-30T12:57:26.828Z] 📝 Header text: 
+                            Categories List
+[2025-10-30T12:57:26.829Z] 🌐 Current URL is: https://app.milkride.com/admin/categories
+[2025-10-30T12:57:26.842Z] Add Category button is visible
+[2025-10-30T12:57:26.868Z] Brand option is visible
+[2025-10-30T12:57:27.452Z] Clicked on Brand
+[2025-10-30T12:57:28.798Z] 📝 Header text: Brand
+                            List
+[2025-10-30T12:57:28.798Z] 🌐 Current URL is: https://app.milkride.com/admin/brands
+[2025-10-30T12:57:28.808Z] Add Brand button is visible
+[2025-10-30T12:57:28.817Z] Products option is visible
+[2025-10-30T12:57:29.324Z] Clicked on Products
+[2025-10-30T12:57:31.250Z] 📝 Header text: Product
+                            List
+[2025-10-30T12:57:31.251Z] 🌐 Current URL is: https://app.milkride.com/admin/products
+[2025-10-30T12:57:31.259Z] Add Product button is visible
+[2025-10-30T12:57:31.267Z] Product Ordering option is visible
+[2025-10-30T12:57:31.766Z] Clicked on Product Ordering
+[2025-10-30T12:57:33.681Z] 📝 Header text: Product Ordering
+[2025-10-30T12:57:33.681Z] 🌐 Current URL is: https://app.milkride.com/admin/products/ordering
+[2025-10-30T12:57:33.697Z] Quick Product Update option is visible
+[2025-10-30T12:57:34.964Z] Clicked on Quick Product Update
+[2025-10-30T12:57:36.398Z] 📝 Header text: Product
+                            List
+[2025-10-30T12:57:36.399Z] 🌐 Current URL is: https://app.milkride.com/admin/bulkProducts/bulkProducts
+[2025-10-30T12:57:36.486Z] Settings option is visible
+[2025-10-30T12:57:38.234Z] Clicked on Settings
+[2025-10-30T12:57:39.232Z] 📝 Header text: 
+                            Payment Modes
+                            
+                        
+[2025-10-30T12:57:39.232Z] 🌐 Current URL is: https://app.milkride.com/admin/setting/payment-modes
+[2025-10-30T12:57:39.232Z] ✅ Completed Product Catalog Module Test
+[2025-10-30T12:57:39.290Z] 🚀 Starting FlexProduct Module Test
+[2025-10-30T12:57:39.397Z] Clicked on Flexproduct
+[2025-10-30T12:57:39.415Z] Attributestab is visible
+[2025-10-30T12:57:39.940Z] Clicked on Attributetab
+[2025-10-30T12:57:40.250Z] 📝 Header text: Attribute List
+[2025-10-30T12:57:40.250Z] 🌐 Current URL is: https://app.milkride.com/admin/attributes
+[2025-10-30T12:57:40.273Z] Add Category button is visible
+[2025-10-30T12:57:40.355Z] Working day tab is visible
+[2025-10-30T12:57:41.069Z] click on Workingday
+[2025-10-30T12:57:41.453Z] 📝 Header text: Working Days
+[2025-10-30T12:57:41.453Z] 🌐 Current URL is: https://app.milkride.com/admin/working_days
+[2025-10-30T12:57:41.518Z] PlanSolt is visible
+[2025-10-30T12:57:42.216Z] Clicked on PlanSolttab
+[2025-10-30T12:57:42.469Z] 📝 Header text: 
+                     Plan Slots List
+[2025-10-30T12:57:42.469Z] 🌐 Current URL is: https://app.milkride.com/admin/planslot
+[2025-10-30T12:57:42.470Z] ✅ Completed FlexProduct Module Test
+[2025-10-30T13:15:22.144Z] Filled username
+[2025-10-30T13:15:22.196Z] Filled Password
+[2025-10-30T13:15:24.106Z] Clicked on login button
+[2025-10-30T13:15:28.409Z] Login Successful and Dashboard is visible
+[2025-10-30T13:15:28.409Z] 🌐 Current URL is: https://app.milkride.com/admin/merchant/dashboard
+[2025-10-30T13:15:28.497Z] 🚀 Starting Banner Module Test
+[2025-10-30T13:15:29.185Z] Click on Bannertab
+[2025-10-30T13:15:29.380Z] 📝 Header text: Banner
+                            List
+[2025-10-30T13:15:29.381Z] 🌐 Current URL is: https://app.milkride.com/admin/banners
+[2025-10-30T13:15:29.487Z] Add banner button is visible
+[2025-10-30T13:15:29.488Z] ✅ Completed Banner Module Test

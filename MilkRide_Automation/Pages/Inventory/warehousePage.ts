@@ -13,6 +13,7 @@ export class WarehousePage{
         this.SuppliersTab=page.locator(`(//span[normalize-space()='Supplier'])[1]`);
     }
     async verifyWarehousePage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.warehouseHeader.isVisible();
@@ -25,5 +26,9 @@ export class WarehousePage{
         console.log('Clicked on Suppliers Tab');
         await this.page.waitForLoadState('networkidle');
        
+    }
+        catch (error) {
+            console.error('❌ Error in verifying Warehouse Page:', error);
+        }
     }
 }

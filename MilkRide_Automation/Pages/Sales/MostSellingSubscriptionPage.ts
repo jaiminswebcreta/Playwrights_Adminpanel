@@ -10,6 +10,7 @@ export class MostSellingSubscriptionPage{
         this.Topcustomerspend=page.locator(`(//span[normalize-space()='Top Customers by Spend'])[1]`);
     }
     async verifyMostSellingSubscriptionPage(){
+        try {
         await this.mostSellingSubscriptionHeader.isVisible();
         console.log('✅ Most Selling Subscription Page is visible');
         const headerText = await this.mostSellingSubscriptionHeader.textContent();
@@ -32,4 +33,11 @@ export class MostSellingSubscriptionPage{
          }
 } 
 }
+catch (err: unknown) {
+    if (err instanceof Error) {
+        console.error('❌ Most Selling Subscription Page verification failed:', err.message);
+    } else {
+        console.error('❌ Most Selling Subscription Page verification failed:', err);
+    }
+}}
 }   

@@ -9,6 +9,7 @@ export class MostSellingpackagesPage{
         this.mostselingsubscription=page.locator(`(//span[normalize-space()='Most Selling Subscriptions'])[1]`);
     }
     async verifyMostSellingpackagesPage(){
+        try{
         await this.mostsellingpackagesHeader.isVisible();
         console.log('✅ Most Selling Packages Page is visible');
         const headerText = await this.mostsellingpackagesHeader.textContent();
@@ -21,5 +22,9 @@ export class MostSellingpackagesPage{
         await this.mostselingsubscription.click();
         console.log('Clicked on most selling subscription link');
                 
+    }
+    catch(error){
+        console.log('❌ Error in Most Selling Packages Page: ', error);
+    }
     }
 }

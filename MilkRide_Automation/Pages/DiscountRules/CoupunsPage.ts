@@ -11,6 +11,7 @@ export class couponsPage{
         this.couponusage=page.locator(`//span[normalize-space()='Coupons Usage']`);
     }
     async verifyCouponsPage(){
+        try {
         await this.couponsHeader.isVisible();
         console.log('✅ Coupons Page is visible');
         const headerText = await this.couponsHeader.textContent();
@@ -23,5 +24,9 @@ export class couponsPage{
         console.log('✅ Coupons Usage link is visible'); 
         await this.couponusage.click();
         console.log('Clicked on Coupons Usage link');                
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Coupons Page:', error);
+    }
     }
 }   

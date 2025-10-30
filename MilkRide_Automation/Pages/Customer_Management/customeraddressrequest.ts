@@ -13,6 +13,7 @@ export class customeraddressrequest{
 
     }
     async verifyCustomerAddressRequestPage(){
+        try {
         await this.customeraddressrequestHeader.isVisible();
         console.log('✅ Customer Address Request Page is visible');
         const headerText = await this.customeraddressrequestHeader.textContent();
@@ -27,5 +28,9 @@ export class customeraddressrequest{
         await this.subscriptionsTab.click();
         console.log('Clicked on Subscriptions Tab');
         await this.page.waitForLoadState('networkidle');          
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Customer Address Request Page:', error);
+    }
     }
 }

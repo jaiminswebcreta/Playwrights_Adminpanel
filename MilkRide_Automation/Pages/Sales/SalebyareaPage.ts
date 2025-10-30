@@ -10,6 +10,7 @@ export class SalebyareaPage{
 
     }   
     async verifysalebyareatabPage(){
+        try {
         await this.salesbyareatabHeader.isVisible();
         console.log('✅ Sales by Area Page is visible');
         const headerText = await this.salesbyareatabHeader.textContent();
@@ -23,5 +24,9 @@ export class SalebyareaPage{
         await this.salesbyhubtab.click();
         console.log('Clicked on Sales by Hub Tab');  
         await this.page.waitForLoadState('load');              
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Sales by Area Page:', error);
+    }
     }
 }

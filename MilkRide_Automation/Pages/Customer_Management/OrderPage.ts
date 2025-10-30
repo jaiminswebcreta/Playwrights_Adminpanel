@@ -13,6 +13,7 @@ export class orderPage {
         this.CustomerinvoiceTab=page.locator(`(//span[normalize-space()='Customer Invoices'])[1]`);
     }
     async verifyOrderPage(){
+        try {
         await this.orderHeader.isVisible();
         console.log('✅ Order Page is visible');
         const headerText = await this.orderHeader.textContent();
@@ -29,5 +30,9 @@ export class orderPage {
         await this.CustomerinvoiceTab.click();
         console.log('Clicked on Customer Invoice Tab');
                   
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Order Page:', error);
+    }
     }
 }

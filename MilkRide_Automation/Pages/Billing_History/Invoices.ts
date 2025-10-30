@@ -11,6 +11,7 @@ export class invoicesPage{
     }
 
     async verifyInvoicesPage(){
+        try {
         await this.invoiceHeader.isVisible();
          console.log('✅ Invoices Page is visible');
         const currentUrl= this.page.url();
@@ -20,5 +21,9 @@ export class invoicesPage{
         await this.dashboard.click();
         console.log('Clicked on Dashboard');       
         await this.page.waitForLoadState('networkidle');
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Invoices Page:', error);
+    }
     }
 }

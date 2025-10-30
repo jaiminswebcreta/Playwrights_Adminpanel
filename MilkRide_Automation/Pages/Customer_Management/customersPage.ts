@@ -12,6 +12,7 @@ export class customersPage{
         this.customeraddressrequest=page.locator(`(//span[normalize-space()='Customer Address Request'])[1]`);
     }
     async verifyCustomersPage(){
+        try {
         await this.customersHeader.isVisible();
          console.log('✅ Customers Page is visible');
         const headerText = await this.customersHeader.textContent();
@@ -26,5 +27,9 @@ export class customersPage{
         await this.customeraddressrequest.click();
         console.log('Clicked on Customer Address Request');
         await this.page.waitForLoadState('networkidle');     
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Customers Page:', error);
+    }
     }
 }

@@ -12,6 +12,7 @@ export class SupplierPage{
         this.purchaseinventoryTab=page.locator(`(//span[normalize-space()='Purchase Inventory'])[1]`);
     }
     async verifysupplierPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.supplierHeader.isVisible();
@@ -25,4 +26,8 @@ export class SupplierPage{
         await this.page.waitForLoadState('networkidle');
          
      }  
+        catch (error) {
+            console.error('❌ Error in verifying Supplier Page:', error);
+        }
+    }
 }

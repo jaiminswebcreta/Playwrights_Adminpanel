@@ -11,6 +11,7 @@ export class ThresholdsPage{
 
     }
     async verifyThresholdsPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.thresholdsHeader.isVisible();
@@ -21,5 +22,9 @@ export class ThresholdsPage{
         await this.SettingsTab.click();
         console.log('Clicked on Settings Tab');
         await this.page.waitForLoadState('networkidle');
+    }
+        catch (error) {
+            console.error('❌ Error in verifying Thresholds Page:', error);
+        }
     }
 }

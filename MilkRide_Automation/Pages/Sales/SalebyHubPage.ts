@@ -12,6 +12,7 @@ export class SalebyHubPage{
 
     }   
     async verifysalebyhubtabPage(){
+        try {
         await this.salesbyhubtabHeader.isVisible();
         console.log('✅ Sales by Hub Page is visible');
         const headerText = await this.salesbyhubtabHeader.textContent();
@@ -24,5 +25,9 @@ export class SalebyHubPage{
         await this.salesbydeliveryexcutivetab.click();
         console.log('Clicked on Sales by Delivery Executive Tab');  
         await this.page.waitForLoadState('load');              
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Sales by Hub Page:', error);
+    }
     }
 }

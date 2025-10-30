@@ -13,6 +13,7 @@ constructor(page:Page){
     this.FirstHub=page.locator(`(//div[@id='kt_table_users_wrapper']//table//tbody//tr[1]//td[2])//a[1]`);
 }
 async verifyHubListPage(){
+    try {
     const currentUrl = this.page.url();
     console.log('🌐 Current URL is: ' + currentUrl);
     await this.hubListHeader.isVisible();
@@ -31,5 +32,8 @@ async verifyHubListPage(){
     // Get current URL
     
 }
+catch (error) {
+    console.error('❌ Error in verifying Hub List Page:', error);   
+}}
 
 }

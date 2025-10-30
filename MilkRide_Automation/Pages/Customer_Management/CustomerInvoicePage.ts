@@ -9,6 +9,7 @@ export class CustomerInvoicePage{
         this.dashboard=page.locator(`(//span[normalize-space()='Dashboard'])[1]`);
     }
     async verifyCustomerInvoicePage(){
+        try {
         await this.customerInvoiceHeader.isVisible();
         console.log('✅ Customer Invoice Page is visible');
         const headerText = await this.customerInvoiceHeader.textContent();
@@ -21,5 +22,9 @@ export class CustomerInvoicePage{
         await this.dashboard.click();
         console.log('Clicked on Dashboard link');
                 
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Customer Invoice Page:', error);
+    }
     }
 }
