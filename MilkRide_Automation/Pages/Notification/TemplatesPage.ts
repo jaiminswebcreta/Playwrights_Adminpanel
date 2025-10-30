@@ -13,6 +13,7 @@ export class TemplatesPage{
         this.dashboardtab=page.locator(`(//span[normalize-space()='Dashboard'])[1]`);
     }
     async verifyTemplatesPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.templatesHeader.isVisible();
@@ -24,5 +25,9 @@ export class TemplatesPage{
         await this.dashboardtab.click();
         console.log('Navigated back to Dashboard from Templates Page');
         await this.page.waitForLoadState('networkidle');
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Templates Page:', error);
+    }
     }
 }

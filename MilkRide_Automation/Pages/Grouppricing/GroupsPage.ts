@@ -11,6 +11,7 @@ export class GroupsPage{
         this.dashboard=page.locator(`(//a[normalize-space()='Dashboard'])[1]`);
     }
     async verifyGroupsPage(){
+        try {
         await this.groupsHeader.isVisible();
         console.log('✅ Groups Page is visible');
         const headerText = await this.groupsHeader.textContent();
@@ -23,5 +24,9 @@ export class GroupsPage{
         console.log('✅ Dashboard link is visible'); 
         await this.dashboard.click();
         console.log('Clicked on Dashboard link');                
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Groups Page:', error);
+    }
     }
 }

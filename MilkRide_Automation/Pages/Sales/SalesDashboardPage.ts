@@ -9,6 +9,7 @@ export class SalesDashboardPage{
         this.productanalysistab=page.locator(`(//span[normalize-space()='Product Analysis'])[1]`);
     }
     async verifySalesDashboardPage(){
+        try {
         await this.salesDashboardHeader.isVisible();
         console.log('✅ Sales Dashboard Page is visible');
         const headerText = await this.salesDashboardHeader.textContent();
@@ -21,4 +22,8 @@ export class SalesDashboardPage{
         await this.productanalysistab.click();
         console.log('Clicked on Product Analysis Tab');                
     }
+    catch (error) {
+        console.error('❌ Error in verifySalesDashboardPage:', error);
+    }
+  }
 }

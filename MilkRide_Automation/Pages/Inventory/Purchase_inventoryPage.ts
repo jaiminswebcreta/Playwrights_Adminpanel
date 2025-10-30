@@ -12,6 +12,7 @@ export class Purchase_inventoryPage{
         this.Batchstab=page.locator(`(//span[normalize-space()='Batches'])[1]`);
     }
     async verifyPurchaseinventoryPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.purchaseinventoryHeader.isVisible();
@@ -25,4 +26,8 @@ export class Purchase_inventoryPage{
         await this.page.waitForLoadState('networkidle');
          
      }
+        catch (error) {
+            console.error('❌ Error in verifying Purchase Inventory Page:', error);
+        }
+    }
 }

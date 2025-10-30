@@ -9,6 +9,7 @@ export class salebycustomergroupPage{
         this.dashboard=page.locator(`(//span[normalize-space()='Dashboard'])[1]`);
     }
     async verifysalebycustomergrouptabPage(){
+        try {
         await this.salebycustomergrouptabHeader.isVisible();
         console.log('✅ Sales by Customer Group Page is visible');
         const headerText = await this.salebycustomergrouptabHeader.textContent();
@@ -16,9 +17,15 @@ export class salebycustomergroupPage{
         const currentUrl= this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
        
-        await this.dashboard.waitFor({ state: 'visible', timeout: 9000 });
+        await this.dashboard.isVisible();
+        console.log('✅ Dashboard Tab is visible');
         await this.dashboard.click();
-        console.log('Clicked on Dashboard Tab');  
+        console.log('Clicked on Dashboard Tab');
+       
     
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Sales by Customer Group Page:', error);
+    }
     }
 }

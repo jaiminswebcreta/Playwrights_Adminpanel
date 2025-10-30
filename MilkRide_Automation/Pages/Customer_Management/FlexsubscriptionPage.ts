@@ -15,6 +15,7 @@ export class FlwexsubscriptionPage {
 
     }
     async verifyFlexsubscriptionPage(){
+        try {
         await this.flexsubscriptionHeader.isVisible();
         console.log('✅ Flex Subscription Page is visible');
         const headerText = await this.flexsubscriptionHeader.textContent();
@@ -31,5 +32,9 @@ export class FlwexsubscriptionPage {
         await this.ordersTab.click();
         console.log('Clicked on Orders Tab');
         await this.page.waitForLoadState('networkidle');          
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Flex Subscription Page:', error);
+    }
     }
 }

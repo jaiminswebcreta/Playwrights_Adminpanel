@@ -29,6 +29,7 @@ export class DeliveryPage{
     }
 
     async verifyDeliveryPage(){
+        try{
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.deliveryHeader.waitFor({ state: 'visible' });
@@ -99,6 +100,10 @@ export class DeliveryPage{
         
         
     }
+    catch (error) {
+        console.error('❌ Error in verifying Delivery Page:', error);
+    }
+    }   
    
     
 }

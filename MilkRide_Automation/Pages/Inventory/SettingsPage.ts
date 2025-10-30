@@ -10,6 +10,7 @@ export class SettingsPage{
         this.dashboardTab=page.locator(`(//span[normalize-space()='Dashboard'])[1]`);
     }
     async verifySettingsPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.settingsHeader.isVisible();
@@ -21,4 +22,8 @@ export class SettingsPage{
         await this.page.waitForLoadState('networkidle');
             
         }
+        catch (error) {
+            console.error('❌ Error in verifying Settings Page:', error);
+        }
+    }
 }

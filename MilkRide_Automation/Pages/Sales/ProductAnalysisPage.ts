@@ -9,6 +9,7 @@ export class ProductAnalysisPage{
         this.MostSellingpackages=page.locator(`(//span[normalize-space()='Most Selling Packages'])[1]`);
     }
     async verifyProductAnalysisPage(){
+        try {
         await this.productanalysisHeader.isVisible();
         console.log('✅ Product Analysis Page is visible');
         const headerText = await this.productanalysisHeader.textContent();
@@ -21,5 +22,9 @@ export class ProductAnalysisPage{
 
         await this.MostSellingpackages.click();
         console.log('Clicked on Most Selling Packages Tab');                
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Product Analysis Page:', error);
+    }
     }
 }

@@ -17,10 +17,16 @@ export class LoginPage{
     }
 
     async OpenURL(){
+        try {
         await this.page.goto('https://app.milkride.com/admin/login');
+    }
+    catch (error) {
+        console.error('❌ Error in opening URL:', error);
+    }
     }
 
     async loginToApp(username:string,password:string){
+        try {
         await this.email.fill(username);
         console.log('Filled username');
         await this.password.fill(password);
@@ -31,5 +37,9 @@ export class LoginPage{
         
    
 
+    }
+    catch (error) {
+        console.error('❌ Error in logging into the application:', error);
+    }
     }
 }

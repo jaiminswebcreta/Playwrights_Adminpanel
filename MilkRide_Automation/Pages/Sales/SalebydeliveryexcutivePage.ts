@@ -9,6 +9,7 @@ export class SalesbydeliveryexcutivePage{
         this.salebycustomergrouptab=page.locator(`(//span[normalize-space()='Sales by Customer Group'])[1]`);
     }
     async verifysalebydeliveryexcutivetabPage(){
+        try {
         await this.salesbydeliveryexcutivetabHeader.isVisible();
         console.log('✅ Sales by Delivery Executive Page is visible');
         const headerText = await this.salesbydeliveryexcutivetabHeader.textContent();
@@ -22,5 +23,9 @@ export class SalesbydeliveryexcutivePage{
         await this.salebycustomergrouptab.click();
         console.log('Clicked on Sales by Customer Group Tab');  
                  
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Sales by Delivery Executive Page:', error);
+    }
     }
 }

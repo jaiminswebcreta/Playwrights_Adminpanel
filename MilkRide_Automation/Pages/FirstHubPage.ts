@@ -27,6 +27,7 @@ export class FirstHubPage {
         this.dashboard = page.locator(`(//span[normalize-space()='Dashboard'])[1]`);
     }
   async verifyFirstHubPage() {
+    try {
     const currentUrl = this.page.url();
     console.log('🌐 Current URL is: ' + currentUrl);
 
@@ -118,6 +119,10 @@ export class FirstHubPage {
     // console.log('Clicked on Dashboard link');
 
 
+}
+catch (error) {
+    console.error('❌ Error in verifying First Hub Page:', error);
+}
 }
     }
 

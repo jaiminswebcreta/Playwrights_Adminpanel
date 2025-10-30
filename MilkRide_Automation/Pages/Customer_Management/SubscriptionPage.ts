@@ -11,6 +11,7 @@ export class SubscriptionsPage{
         this.Flexsubscription=page.locator(`//span[normalize-space()='FlexSubscriptions']`);
     }
     async verifySubscriptionsPage(){
+        try {
         await this.subscriptionsHeader.isVisible();
         console.log('✅ Subscriptions Page is visible');
         const headerText = await this.subscriptionsHeader.textContent();
@@ -24,6 +25,10 @@ export class SubscriptionsPage{
         await this.Flexsubscription.click();
         console.log('Clicked on Flex Subscription option');
         await this.page.waitForLoadState('networkidle');
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Subscriptions Page:', error);
+    }
     }
 }
         

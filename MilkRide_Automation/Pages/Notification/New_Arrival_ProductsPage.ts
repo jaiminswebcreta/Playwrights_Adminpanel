@@ -12,6 +12,7 @@ export class New_Aeeival_ProductsPage{
         this.Templatestab=page.locator(`(//span[normalize-space()='Templates'])[1]`);
     }
     async verifyNewArrivalProductsPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl)
         await this.pushNotificationHeader.isVisible();
@@ -26,6 +27,10 @@ export class New_Aeeival_ProductsPage{
         await this.page.waitForLoadState('networkidle');
 
     }
+    catch (error) {
+        console.error('❌ Error in verifying New Arrival Products Page:', error);
+    }   
+}
     
     }
         

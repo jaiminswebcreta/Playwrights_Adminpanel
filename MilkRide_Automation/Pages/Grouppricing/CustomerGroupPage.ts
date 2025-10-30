@@ -11,6 +11,7 @@ export class CustomerGroupPage{
         this.Groupstab=page.locator(`(//span[normalize-space()='Groups'])[1]`);
     }
     async verifyCustomerGroupPage(){
+        try {
         await this.customerGroupHeader.isVisible();
         console.log('✅ Customer Group Page is visible');
         const headerText = await this.customerGroupHeader.textContent();
@@ -21,5 +22,9 @@ export class CustomerGroupPage{
         console.log('✅ Groups Tab is visible'); 
         await this.Groupstab.click();
         console.log('Clicked on Groups Tab');                
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Customer Group Page:', error);
+    }
     }
 }

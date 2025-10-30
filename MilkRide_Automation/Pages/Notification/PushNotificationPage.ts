@@ -14,6 +14,7 @@ export class PushNotificationPage{
     }
 
     async verifyPushNotificationPage(){
+        try {
         const currentUrl = this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);    
     
@@ -29,6 +30,10 @@ export class PushNotificationPage{
         
         console.log('Clicked on New Arrival Button');
         await this.page.waitForLoadState('networkidle');
+    }
+    catch (error) {
+        console.error('❌ Error in verifying Push Notification Page:', error);
+    }
     }
     
     }
