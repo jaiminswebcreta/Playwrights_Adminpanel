@@ -75,6 +75,17 @@ export class HomePage{
 
     readonly BannerTab:Locator
 
+    //Location Manager
+    readonly LocationManagerTab:Locator
+    readonly RegionTab:Locator
+    readonly LocationTab:Locator
+    readonly AreaTab :Locator
+    readonly RouteTab:Locator
+
+    //Reports
+    readonly ReportTab:Locator
+    readonly ViewMOreTab:Locator
+
 
 
 
@@ -137,12 +148,92 @@ export class HomePage{
         this.PlanSoltTab=page.locator(`(//span[normalize-space()='Plan Slot'])[1]`);
 
         //Banner 
-        this.BannerTab=page.locator(`(//span[normalize-space()='Banner'])[1]`)
+        this.BannerTab=page.locator(`(//span[normalize-space()='Banner'])[1]`);
+
+        //Location Manager
+        this.LocationManagerTab=page.locator(`//span[contains(text(),'Location Manager')]`);
+        this.RegionTab=page.locator(`(//span[normalize-space()='Region'])[1]`);
+        this.LocationTab=page.locator(`(//span[@class='menu-title'][normalize-space()='Location'])[1]`);
+        this.AreaTab=page.locator(`(//span[normalize-space()='Area'])[1]`);
+        this.RouteTab=page.locator(`(//span[normalize-space()='Route'])[1]`);
+
+        //Reports
+        this.ReportTab=page.locator(`(//span[@class='menu-title'][normalize-space()='Reports'])[1]`);
+        this.ViewMOreTab=page.locator( `(//span[normalize-space()='View More'])[1]`);
+
+        
+
     }
+    async ClickonReportstab(){
+        await this.ReportTab.click();
+        console.log(`Click on Reports Tab`);
+    }
+    async ClickonViewmoreTab(){
+        await this.ViewMOreTab.click();
+        console.log(`Click on ViewMOreTab`)
+
+    }
+    async ClickonLocationManagerTab(){
+        try{
+            await this.LocationManagerTab.click();
+            console.log(`click on LocationManagerTab`);
+        }
+        catch(error){
+            console.error('❌ Error in clicking LocationManagerTab:', error);
+
+        }
+
+        }
+        async ClickonRegionTab(){
+        try{
+            await this.RegionTab.click();
+            console.log(`click on RegionTab`);
+        }
+        catch(error){
+            console.error('❌ Error in clicking RigionTab:', error);
+
+        }
+
+        }
+        async ClickonLocationTab(){
+        try{
+            await this.LocationTab.click();
+            console.log(`click on LocationTab`);
+        }
+        catch(error){
+            console.error('❌ Error in clicking LocationTab:', error);
+
+        }
+
+        }
+        async ClickonAreaTab(){
+        try{
+            await this.AreaTab.click();
+            console.log(`click on AreaTab`);
+        }
+        catch(error){
+            console.error('❌ Error in clicking AreaTab:', error);
+
+        }
+
+        }
+        async ClickonRouteTab(){
+        try{
+            await this.RouteTab.click();
+            console.log(`click on RouteTab`);
+        }
+        catch(error){
+            console.error('❌ Error in clicking RouteTab:', error);
+
+        }
+
+        }
+
+    
     async Clikonbannertab(){
         try{
-            await this.BannerTab.click()
-            console.log( `Click on Bannertab`)
+            await this.BannerTab.click();
+            console.log( `Click on Bannertab`);
         }
         catch(error){
             console.error('❌ Error in clicking bannertab:', error);

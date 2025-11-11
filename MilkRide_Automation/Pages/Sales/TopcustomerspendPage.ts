@@ -21,7 +21,7 @@ export class TopcustomerspendPage{
         console.log('✅ Sales by Area Tab is visible'); 
         await this.salebyareatab.click();
         console.log('🖱️ Clicked on Sales by Area Tab');
-        await this.page.waitForLoadState('networkidle');
+        
  
       
   }

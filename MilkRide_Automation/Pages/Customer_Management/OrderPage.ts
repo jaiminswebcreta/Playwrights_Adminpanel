@@ -7,7 +7,7 @@ export class orderPage {
     readonly CustomerinvoiceTab:Locator
     constructor(page:Page){
         this.page=page;
-        this.orderHeader=page.locator(`(//h1[normalize-space()='All Customers Orders'])[1]`);
+        this.orderHeader=page.locator(`(//h1[contains(text(),'All')])[1]`);
         this.addorderbutton=page.locator(`(//button[normalize-space()='Add New Order'])[1]`);
         // this.customerMangement=page.locator(`(//span[contains(text(),'Customer Management')])[1]`);
         this.CustomerinvoiceTab=page.locator(`(//span[normalize-space()='Customer Invoices'])[1]`);
