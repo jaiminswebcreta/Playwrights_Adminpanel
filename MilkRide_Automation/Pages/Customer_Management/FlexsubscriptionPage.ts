@@ -8,7 +8,7 @@ export class FlwexsubscriptionPage {
 
     constructor(page:Page){
         this.page=page;
-        this.flexsubscriptionHeader=page.locator(`(//h1[normalize-space()='FlexProduct Plans'])[1]`);
+        this.flexsubscriptionHeader=page.locator(`(//h1[contains(text(),'All')])[1]`);
         this.addNewFlexsubscriptionButton=page.locator(`(//button[normalize-space()='Add Plan Subscription'])[1]`);
         this.customerMangement=page.locator(`(//span[contains(text(),'Customer Management')])[1]`);
         this.ordersTab=page.locator(`(//span[normalize-space()='Orders'])[1]`);

@@ -62,6 +62,26 @@ import { WorkingDayPage } from '../Pages/FlexProduct/WorkingDayPage';
 import { PlanSlotPage } from '../Pages/FlexProduct/PlanSlotPage';
 //Banner
 import { BannerPage } from '../Pages/BannerPage';
+//Location Manager
+import {RegionPage} from '../Pages/Location_Manager/RegionPage'
+import { LocationPage } from '../Pages/Location_Manager/LocationPage'
+import {AreaPage} from '../Pages/Location_Manager/AreaPage'
+import { RoutePage } from '../Pages/Location_Manager/RoutePage'
+
+//ReportListpage
+
+import { ReportListPage } from '../Pages/Reports/ReportListPage';
+
+//Cusromer Report
+import { CustmoerWalletPage } from '../Pages/Reports/Customer_Reports/CustmoerWalletPage';
+import { CustomerInformationPage } from '../Pages/Reports/Customer_Reports/CustomerInformationPage';
+import { ActivityLogsPage } from '../Pages/Reports/Customer_Reports/ActivityLogs';
+import { LowCreditPage } from '../Pages/Reports/Customer_Reports/LowCreditPage';
+import { CustomerVacationPage } from '../Pages/Reports/Customer_Reports/CustomerVacationPage';
+import { SubscriptionreportPage } from '../Pages/Reports/Customer_Reports/SubscriptionreportPage';
+import { SubscriptionEndreportPage } from '../Pages/Reports/Customer_Reports/SubscriptionEndPage';
+import { report } from 'process';
+
 
 
 
@@ -126,12 +146,30 @@ test.describe('All Module Test', () => {
     let settings2Page: Settings2Page;
 
     //FlexProduct Catelog
-    let attributesPage :AttributesPage
-    let workingDayPage : WorkingDayPage
-    let planSlotPage : PlanSlotPage
+    let attributesPage :AttributesPage;
+    let workingDayPage : WorkingDayPage;
+    let planSlotPage : PlanSlotPage;
 
     //Banner
-    let bannerPage : BannerPage
+    let bannerPage : BannerPage;
+
+    //Location Manager
+    let locationPage : LocationPage;
+    let regionPage : RegionPage
+    let areaPage : AreaPage
+    let routePage : RoutePage
+
+    //Reports
+    let reportListPage : ReportListPage
+    let custmoerWalletPage :CustmoerWalletPage;
+    let customerInformationPage : CustomerInformationPage;
+    let activityLogsPage : ActivityLogsPage
+    let lowCreditPage : LowCreditPage;
+    let customerVacationPage : CustomerVacationPage;
+    let subscriptionPage : SubscriptionsPage
+    let subscriptionEndreport :SubscriptionEndreportPage
+    let subscriptionreportPage : SubscriptionreportPage
+
 
   test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
@@ -203,8 +241,21 @@ test.describe('All Module Test', () => {
 
     //Banner
     bannerPage = new BannerPage(page);
+    //Location Manager
+    regionPage = new RegionPage(page);
+    locationPage =new LocationPage(page);
+    areaPage = new AreaPage(page);
+    routePage =new RoutePage(page);
 
-
+    //Report
+    reportListPage =new ReportListPage(page);
+    custmoerWalletPage =  new CustmoerWalletPage(page);
+    customerInformationPage = new CustomerInformationPage(page);
+    activityLogsPage = new ActivityLogsPage(page);
+    lowCreditPage =new LowCreditPage(page);
+    customerVacationPage = new CustomerVacationPage(page);
+    subscriptionreportPage =new SubscriptionreportPage(page);
+    subscriptionEndreport =new SubscriptionEndreportPage(page);
 
 
     
@@ -382,6 +433,46 @@ test.describe('All Module Test', () => {
     await bannerPage.verifytoBannerPage();
     console.log('✅ Completed Banner Module Test');
   });
+
+   test('Navigate to LocationManager Module', async () => {
+    console.log('🚀 Starting LocationManager Module Test');
+    await homePage.ClickonLocationManagerTab();
+    await homePage.ClickonRegionTab();       
+    await regionPage.verifyRegionPage();
+    await homePage.ClickonLocationTab();
+    await locationPage.verifyLocationPage();
+    await homePage.ClickonAreaTab();
+    await areaPage.verifyAreaPage();
+    await homePage.ClickonRouteTab();
+    await routePage.verifyRoutePage();
+
+    console.log('✅ Completed LocationManager Module Test');
+  });
+
+ test('Navigate to Reports Module', async () => {
+    console.log('🚀 Starting Reports Module Test');
+   await homePage.ClickonReportstab();
+   await homePage.ClickonViewmoreTab();
+   await reportListPage.VerifySubscriptionreportReportPage();
+   await reportListPage.ClickonCustomerWalletReport();
+
+   await custmoerWalletPage.verifyCustomerWalletReportPage();
+   await reportListPage.ClickonCustomerInformationReport();
+   await customerInformationPage.VerifyCustomerInformationReportPage();
+   await reportListPage.ClickonActivityReport();
+   await activityLogsPage.VerifyActivityLogsReportPage();
+   await reportListPage.ClickonLowCreditReport();
+   await lowCreditPage.VerifyLowCreditPage();
+   await reportListPage.ClickonCustomerVacationReport();
+   await customerVacationPage.VerifyCustomerVacationReportPage();
+   await reportListPage.ClickonSubscriptionResport();
+   await subscriptionreportPage.VerifySubscriptionreportReportPage();
+   await reportListPage.ClickonSubscriptionEndReport();
+   await subscriptionEndreport.VerifySubscriptionreportReportPage();
+
+    console.log('✅ Completed Reports Module Test');
+  });
+
 
   // test.afterAll(async () => {
   //   console.log('✅ Completed all tests in same session');

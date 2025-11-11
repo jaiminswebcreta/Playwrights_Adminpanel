@@ -9,7 +9,7 @@ export class customersPage{
         this.page=page;
         this.customersHeader=page.locator(`(//span[@class='menu-title'][normalize-space()='Customers'])[1]`);
         this.addcustomer=page.locator(`(//a[normalize-space()='Add Customer'])[1]`);
-        this.customeraddressrequest=page.locator(`(//span[normalize-space()='Customer Address Request'])[1]`);
+        this.customeraddressrequest=page.locator(`(//span[normalize-space()='Change Address'])[1]`);
     }
     async verifyCustomersPage(){
         try {

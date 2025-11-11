@@ -13,15 +13,15 @@ export class couponsPage{
     async verifyCouponsPage(){
         try {
         await this.couponsHeader.isVisible();
-        console.log('✅ Coupons Page is visible');
+        console.log('Coupons Page is visible');
         const headerText = await this.couponsHeader.textContent();
         console.log(`📝 Header text: ${headerText}`);
         const currentUrl= this.page.url();
         console.log('🌐 Current URL is: ' + currentUrl);
         await this.addcouponButton.isVisible();
-        console.log('✅ Add Coupon button is visible'); 
+        console.log('Add Coupon button is visible'); 
         await this.couponusage.isVisible();
-        console.log('✅ Coupons Usage link is visible'); 
+        console.log('Coupons Usage link is visible'); 
         await this.couponusage.click();
         console.log('Clicked on Coupons Usage link');                
     }
