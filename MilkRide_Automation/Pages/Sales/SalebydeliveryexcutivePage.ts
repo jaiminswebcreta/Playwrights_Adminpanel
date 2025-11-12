@@ -22,6 +22,7 @@ export class SalesbydeliveryexcutivePage{
 
         await this.salebycustomergrouptab.click();
         console.log('Clicked on Sales by Customer Group Tab');  
+        await this.page.waitForLoadState(`networkidle`);
                  
     }
     catch (error) {

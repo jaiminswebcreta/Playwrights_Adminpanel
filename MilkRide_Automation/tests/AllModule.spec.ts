@@ -80,7 +80,23 @@ import { LowCreditPage } from '../Pages/Reports/Customer_Reports/LowCreditPage';
 import { CustomerVacationPage } from '../Pages/Reports/Customer_Reports/CustomerVacationPage';
 import { SubscriptionreportPage } from '../Pages/Reports/Customer_Reports/SubscriptionreportPage';
 import { SubscriptionEndreportPage } from '../Pages/Reports/Customer_Reports/SubscriptionEndPage';
-import { report } from 'process';
+import { ReferralReportPage} from '../Pages/Reports/Customer_Reports/ReferralReportPage'
+
+//Oprational Report
+import { FutureorderReportPage }from '../Pages/Reports/Operational_Reports/FutureorderReportPage';
+import { PredictiveAnalysisReportPage }from '../Pages/Reports/Operational_Reports/PredictiveAnalysisReportPage';
+import { ReverseLogisticReportPage }from '../Pages/Reports/Operational_Reports/ReverseLogisticReportPage';
+import { CashCollectionsReportPage }from '../Pages/Reports/Operational_Reports/CashCollectionsReportPage';
+import { OrderInformationreportPage }from '../Pages/Reports/Operational_Reports/OrderInformationreportPage';
+import { FlexOrdersReportPage }from '../Pages/Reports/Operational_Reports/FlexOrdersReportPage';
+import { DemandForecastingReportPage }from '../Pages/Reports/Operational_Reports/DemandForecastingReportPage';
+import { RecentSpendReportPage }from '../Pages/Reports/Operational_Reports/RecentSpendReportPage';
+import { ReservationReportPage }from '../Pages/Reports/Operational_Reports/ReservationReportPage';
+import { CancelledOrderReportpage }from '../Pages/Reports/Operational_Reports/CancelledOrderReportpage';
+import { RefundreportPage }from '../Pages/Reports/Operational_Reports/RefundreportPage';
+import { DeliveriesInformationReportPage }from '../Pages/Reports/Operational_Reports/DeliveriesInformationReportPage';
+import { ImageProofReportPage }from '../Pages/Reports/Operational_Reports/ImageProofReportPage';
+
 
 
 
@@ -155,21 +171,39 @@ test.describe('All Module Test', () => {
 
     //Location Manager
     let locationPage : LocationPage;
-    let regionPage : RegionPage
-    let areaPage : AreaPage
-    let routePage : RoutePage
+    let regionPage : RegionPage;
+    let areaPage : AreaPage;
+    let routePage : RoutePage;
 
     //Reports
-    let reportListPage : ReportListPage
+    //Customer Report
+    let reportListPage : ReportListPage;
     let custmoerWalletPage :CustmoerWalletPage;
     let customerInformationPage : CustomerInformationPage;
-    let activityLogsPage : ActivityLogsPage
+    let activityLogsPage : ActivityLogsPage;
     let lowCreditPage : LowCreditPage;
     let customerVacationPage : CustomerVacationPage;
-    let subscriptionPage : SubscriptionsPage
-    let subscriptionEndreport :SubscriptionEndreportPage
-    let subscriptionreportPage : SubscriptionreportPage
+    let subscriptionPage : SubscriptionsPage;
+    let subscriptionEndreport :SubscriptionEndreportPage;
+    let subscriptionreportPage : SubscriptionreportPage;
+    let referralReportPage : ReferralReportPage;
+   
+  
 
+    //Oprational Report
+    let futureorderReportPage : FutureorderReportPage;
+    let predictiveAnalysisReportPage : PredictiveAnalysisReportPage;
+    let reverseLogisticReportPage : ReverseLogisticReportPage;
+    let cashCollectionsReportPage : CashCollectionsReportPage;
+    let orderInformationreportPage :OrderInformationreportPage;
+    let flexOrdersReportPage : FlexOrdersReportPage;
+    let demandForecastingReportPage : DemandForecastingReportPage;
+    let recentSpendReportPage : RecentSpendReportPage;
+    let reservationReportPage : ReservationReportPage;
+    let cancelledOrderReportpage : CancelledOrderReportpage;
+    let refundreportPage :RefundreportPage;
+    let deliveriesInformationReportPage :DeliveriesInformationReportPage;
+    let imageProofReportPage : ImageProofReportPage;
 
   test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
@@ -256,7 +290,23 @@ test.describe('All Module Test', () => {
     customerVacationPage = new CustomerVacationPage(page);
     subscriptionreportPage =new SubscriptionreportPage(page);
     subscriptionEndreport =new SubscriptionEndreportPage(page);
+    referralReportPage = new ReferralReportPage(page);
+    //Oprational report
 
+    futureorderReportPage =new FutureorderReportPage(page);
+   
+     predictiveAnalysisReportPage=new PredictiveAnalysisReportPage (page);
+    reverseLogisticReportPage =new ReverseLogisticReportPage(page);
+    cashCollectionsReportPage =new CashCollectionsReportPage(page);
+    orderInformationreportPage =new OrderInformationreportPage(page);
+    flexOrdersReportPage =new FlexOrdersReportPage(page);
+    demandForecastingReportPage =new DemandForecastingReportPage(page);
+    recentSpendReportPage  =new RecentSpendReportPage(page);
+    reservationReportPage  =new ReservationReportPage(page);
+    cancelledOrderReportpage =new CancelledOrderReportpage(page);
+    refundreportPage =new RefundreportPage(page);
+    deliveriesInformationReportPage =new DeliveriesInformationReportPage(page);
+    imageProofReportPage =new ImageProofReportPage(page);
 
     
   
@@ -354,6 +404,7 @@ test.describe('All Module Test', () => {
     await salebyhubtabPage .verifysalebyhubtabPage();
     await salebydeliveryexcutivetabPage.verifysalebydeliveryexcutivetabPage();
     await salebycustomergrouptabPage.verifysalebycustomergrouptabPage();
+   
     console.log('✅ Completed Sales Module Test');
   });
 
@@ -451,6 +502,7 @@ test.describe('All Module Test', () => {
 
  test('Navigate to Reports Module', async () => {
     console.log('🚀 Starting Reports Module Test');
+    //Sale Report
    await homePage.ClickonReportstab();
    await homePage.ClickonViewmoreTab();
    await reportListPage.VerifySubscriptionreportReportPage();
@@ -469,6 +521,44 @@ test.describe('All Module Test', () => {
    await subscriptionreportPage.VerifySubscriptionreportReportPage();
    await reportListPage.ClickonSubscriptionEndReport();
    await subscriptionEndreport.VerifySubscriptionreportReportPage();
+   await reportListPage.ClickonReferralReportTab();
+   await referralReportPage.VerifyReferralReportPage();
+
+   //Operational Reports
+
+   await reportListPage.ClickFutureOrderTab();
+   await futureorderReportPage.VerifyFuturorderReportPage();
+   await reportListPage.ClickonPredicativeAnalysistab();
+   await predictiveAnalysisReportPage.VerifyPredictiveAnalysisReportPage();
+   await reportListPage.ClickonReverse_LogisticTab();
+   await reverseLogisticReportPage.VerifyReverseLogisticReportPage();
+   await reportListPage.ClickonCancelledorderTab();
+   await cashCollectionsReportPage.VerifyCashCollectionsReportPage();
+   await reportListPage.ClickonOrder_Informationtab();
+   await orderInformationreportPage.VerifyOrderInformationreportPage();
+   await reportListPage.ClickonFlexOrdertab();
+   await flexOrdersReportPage.VerifyFlexOrdersReportPage();
+   await reportListPage.ClickonDemandForecastingTab();
+   await demandForecastingReportPage.VerifyDemandForecastingReportPage();
+   await reportListPage.ClickonRecentspendReportTab();
+   await recentSpendReportPage.VerifyRecentSpendReportPage();
+
+   await reportListPage.ClickonReservationreportTab();
+   await reservationReportPage.VerifyReservationReportPage();
+   await reportListPage.ClickonCancelledorderTab();
+   await cancelledOrderReportpage.VerifyCancelledOrderReportpage();
+   await reportListPage.ClickonRefundreportTab();
+   await refundreportPage.VerifyRefundreportPage();
+   await reportListPage.ClickonDeliveriesInformation();
+   await deliveriesInformationReportPage.VerifyDeliveriesInformationReportPage();
+   await reportListPage.ClickonImageProofTab();
+   await imageProofReportPage.VerifyImageProofReportPage();
+
+
+
+
+   
+
 
     console.log('✅ Completed Reports Module Test');
   });
