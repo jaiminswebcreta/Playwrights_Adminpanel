@@ -97,8 +97,13 @@ import { RefundreportPage }from '../Pages/Reports/Operational_Reports/Refundrepo
 import { DeliveriesInformationReportPage }from '../Pages/Reports/Operational_Reports/DeliveriesInformationReportPage';
 import { ImageProofReportPage }from '../Pages/Reports/Operational_Reports/ImageProofReportPage';
 
+//Sales Report
 
-
+import { TransactionsReportPage } from '../Pages/Reports/Sales_Reports/TransactionsReportPage'
+import { CumulativeSalesReportPage }from '../Pages/Reports/Sales_Reports/CumulativeSalesReportPage'
+import { CustomerSalesReportPage }from '../Pages/Reports/Sales_Reports/CustomerSalesReportPage'
+import { OrdersSheetReportPage }from '../Pages/Reports/Sales_Reports/OrdersSheetReportPage'
+import { WalletReportReportPage }from '../Pages/Reports/Sales_Reports/WalletReportReportPage'
 
 
 test.describe('All Module Test', () => {
@@ -205,6 +210,14 @@ test.describe('All Module Test', () => {
     let deliveriesInformationReportPage :DeliveriesInformationReportPage;
     let imageProofReportPage : ImageProofReportPage;
 
+    // sales Report
+
+    let transactionsReportPage : TransactionsReportPage;
+    let cumulativeSalesReportPage : CumulativeSalesReportPage;
+    let customerSalesReportPage : CustomerSalesReportPage;
+    let ordersSheetReportPage :OrdersSheetReportPage;
+    let walletReportReportPage : WalletReportReportPage
+
   test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
@@ -293,9 +306,8 @@ test.describe('All Module Test', () => {
     referralReportPage = new ReferralReportPage(page);
     //Oprational report
 
-    futureorderReportPage =new FutureorderReportPage(page);
-   
-     predictiveAnalysisReportPage=new PredictiveAnalysisReportPage (page);
+    futureorderReportPage =new FutureorderReportPage(page);   
+    predictiveAnalysisReportPage=new PredictiveAnalysisReportPage (page);
     reverseLogisticReportPage =new ReverseLogisticReportPage(page);
     cashCollectionsReportPage =new CashCollectionsReportPage(page);
     orderInformationreportPage =new OrderInformationreportPage(page);
@@ -307,6 +319,15 @@ test.describe('All Module Test', () => {
     refundreportPage =new RefundreportPage(page);
     deliveriesInformationReportPage =new DeliveriesInformationReportPage(page);
     imageProofReportPage =new ImageProofReportPage(page);
+
+    //sales Report
+
+    transactionsReportPage = new  TransactionsReportPage(page);
+    cumulativeSalesReportPage= new CumulativeSalesReportPage(page);
+    customerSalesReportPage = new CustomerSalesReportPage(page);
+    ordersSheetReportPage = new  OrdersSheetReportPage(page);
+    walletReportReportPage =new WalletReportReportPage(page);
+
 
     
   
@@ -502,7 +523,7 @@ test.describe('All Module Test', () => {
 
  test('Navigate to Reports Module', async () => {
     console.log('🚀 Starting Reports Module Test');
-    //Sale Report
+    //Customers Report
    await homePage.ClickonReportstab();
    await homePage.ClickonViewmoreTab();
    await reportListPage.VerifySubscriptionreportReportPage();
@@ -542,7 +563,6 @@ test.describe('All Module Test', () => {
    await demandForecastingReportPage.VerifyDemandForecastingReportPage();
    await reportListPage.ClickonRecentspendReportTab();
    await recentSpendReportPage.VerifyRecentSpendReportPage();
-
    await reportListPage.ClickonReservationreportTab();
    await reservationReportPage.VerifyReservationReportPage();
    await reportListPage.ClickonCancelledorderTab();
@@ -554,12 +574,20 @@ test.describe('All Module Test', () => {
    await reportListPage.ClickonImageProofTab();
    await imageProofReportPage.VerifyImageProofReportPage();
 
+   //sales Report
 
-
-
+   await reportListPage.ClickonTransactionstab();
+   await transactionsReportPage.VerifyTransactionsReportPage();
+   await reportListPage.ClickonCumulativeSalestab();
+   await cumulativeSalesReportPage.VerifyCumulativeSalesReportPage();
+   await reportListPage.ClickonCustomerSalestab();
+   await customerSalesReportPage.VerifyCustomerSalesReportPage();
+   await reportListPage.ClickonOrdersSheettab();
+   await ordersSheetReportPage.VerifyOrdersSheetReportPage();
+   await reportListPage.ClickonWalletReporttab();
+   await walletReportReportPage.VerifyWalletReportReportPage();
    
-
-
+ 
     console.log('✅ Completed Reports Module Test');
   });
 
