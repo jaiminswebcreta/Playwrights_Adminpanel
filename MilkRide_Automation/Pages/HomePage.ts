@@ -293,10 +293,11 @@ export class HomePage{
     async ClickonDashboard(){
         try {
         
-        await this.dashboard.waitFor({ state: 'visible' });
+        await this.dashboard.waitFor({ state: 'visible',timeout: 20000 });
         console.log('Dashboard is visible');
         await this.dashboard.click();
         console.log('Clicked on Dashboard');
+         await this.page.waitForLoadState('networkidle');
     }   
     catch (error) {
         console.error('❌ Error in clicking Dashboard:', error);
