@@ -26,7 +26,16 @@ export class ReportListPage {
     readonly CancelledorderTab : Locator;
     readonly RefundreportTab : Locator;
     readonly DeliveriesInformation :Locator;
-    readonly ImageProofTab : Locator
+    readonly ImageProofTab :Locator;
+    // Sales Report
+
+    readonly Transactionstab :Locator;
+    readonly CumulativeSalestab :Locator;
+    readonly CustomerSalestab :Locator;
+    readonly OrdersSheettab :Locator;
+    readonly WalletReporttab :Locator;
+    
+
 
 
     
@@ -56,6 +65,15 @@ export class ReportListPage {
         this.RefundreportTab = page.locator(`(//a[contains(text(),'Refund')])[1]`);
         this.DeliveriesInformation = page.locator(`(//a[contains(text(),'Refund')])[1]`);
         this.ImageProofTab =page.locator(`(//a[normalize-space()='Image Proof'])[1]`);
+
+        //sales Report
+
+        this.Transactionstab =page.locator(`(//a[contains(text(),'Transactions')])[1]`)
+        this.CumulativeSalestab =page.locator(`(//a[normalize-space()='Cumulative Sales'])[1]`)
+        this.CustomerSalestab =page.locator(`(//a[contains(text(),'Customer Sales (Sales')])[1]`)
+        this.OrdersSheettab =page.locator(`(//a[normalize-space()='Orders Sheet'])[1]`)
+        this.WalletReporttab =page.locator(`(//a[contains(text(),'Wallet (Payment')])[1]`)
+
 
 
 
@@ -170,9 +188,39 @@ export class ReportListPage {
         await this.DeliveriesInformation.click();
         console.log(`Click on DeliveriesInformation`);
      }
-           async ClickonImageProofTab(){
+        async ClickonImageProofTab(){
 
         await this.ImageProofTab.click();
+        console.log(`Click on ImageProofTab`);
+     }
+
+        async ClickonTransactionstab(){
+
+        await this.Transactionstab.waitFor({ state: 'visible' });
+        await this.Transactionstab.click();
+        console.log(`Click on ImageProofTab`);
+     }
+        async ClickonCustomerSalestab(){
+
+        await this.CustomerSalestab.waitFor({ state: 'visible' });
+        await this.CustomerSalestab.click();
+        console.log(`Click on ImageProofTab`);
+     }
+        async ClickonCumulativeSalestab(){
+        await this.CumulativeSalestab.waitFor({state:'visible'});    
+        await this.CumulativeSalestab.click();
+        console.log(`Click on ImageProofTab`);
+     }
+        async ClickonOrdersSheettab(){
+        await this.OrdersSheettab.waitFor({state:'visible'});
+        await this.OrdersSheettab.click();
+        console.log(`Click on ImageProofTab`);
+     }
+
+        async ClickonWalletReporttab(){
+
+        await this.WalletReporttab.waitFor({state:'visible'});
+        await this.WalletReporttab.click();
         console.log(`Click on ImageProofTab`);
      }
 
