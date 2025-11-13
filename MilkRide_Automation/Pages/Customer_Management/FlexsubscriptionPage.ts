@@ -29,7 +29,11 @@ export class FlwexsubscriptionPage {
         await this.ordersTab.isVisible();
         
         console.log('✅ Orders Tab is visible');
-        await this.ordersTab.click();
+      
+        await Promise.all([
+            this.page.waitForLoadState('domcontentloaded'),
+            this.ordersTab.click(),
+        ])
         console.log('Clicked on Orders Tab');
         await this.page.waitForLoadState('networkidle');          
     }

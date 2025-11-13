@@ -105,6 +105,18 @@ import { CustomerSalesReportPage }from '../Pages/Reports/Sales_Reports/CustomerS
 import { OrdersSheetReportPage }from '../Pages/Reports/Sales_Reports/OrdersSheetReportPage'
 import { WalletReportReportPage }from '../Pages/Reports/Sales_Reports/WalletReportReportPage'
 
+//User & Roles
+
+import { MerchantPage } from '../Pages/Users_Roles/MerchantPage'
+import { UserPage } from '../Pages/Users_Roles/UserPage'
+import { AgentPage } from '../Pages/Users_Roles/AgentPage'
+import { RolePage } from '../Pages/Users_Roles/RolePage'
+import { PermissionPage } from '../Pages/Users_Roles/PermissionPage'
+
+//
+import { MyAccountPage } from '../Pages/MyAccountPage'
+import { MyTicketPage } from '../Pages/MyTicketPage'
+import {MyHolidayPage} from '../Pages/MyHolidayPage'
 
 test.describe('All Module Test', () => {
 
@@ -217,6 +229,21 @@ test.describe('All Module Test', () => {
     let customerSalesReportPage : CustomerSalesReportPage;
     let ordersSheetReportPage :OrdersSheetReportPage;
     let walletReportReportPage : WalletReportReportPage
+    
+
+    //User & Roles
+    let merchantPage :MerchantPage;
+    let userPage : UserPage;
+    let agentPage : AgentPage;
+    let rolePage : RolePage;
+    let permissionPage : PermissionPage;
+
+    //
+    let myAccountPage : MyAccountPage;
+    let myTicketPage : MyTicketPage;
+    let myHolidayPage : MyHolidayPage;
+
+
 
   test.beforeAll(async ({ browser }) => {
     const context = await browser.newContext();
@@ -327,6 +354,21 @@ test.describe('All Module Test', () => {
     customerSalesReportPage = new CustomerSalesReportPage(page);
     ordersSheetReportPage = new  OrdersSheetReportPage(page);
     walletReportReportPage =new WalletReportReportPage(page);
+
+    //User & Roles
+
+    merchantPage = new MerchantPage(page);
+    userPage = new UserPage(page);
+    agentPage = new AgentPage(page);
+    rolePage = new RolePage(page);
+    permissionPage = new PermissionPage(page);
+
+    //
+     
+    myAccountPage=new MyAccountPage(page);
+    myTicketPage =new MyTicketPage(page);
+    myHolidayPage = new MyHolidayPage(page);
+
 
 
     
@@ -585,11 +627,49 @@ test.describe('All Module Test', () => {
    await reportListPage.ClickonOrdersSheettab();
    await ordersSheetReportPage.VerifyOrdersSheetReportPage();
    await reportListPage.ClickonWalletReporttab();
-   await walletReportReportPage.VerifyWalletReportReportPage();
-   
+   await walletReportReportPage.VerifyWalletReportReportPage();   
  
     console.log('✅ Completed Reports Module Test');
   });
+     test('Navigate to User & Roles Module', async () => {
+    console.log('🚀 Starting User & Roles Module Test');
+   await homePage.ClickonUserRolesTab();
+   await homePage.Clickonusertab();
+   await userPage.VerifyUserPage();
+   await homePage.ClickonAgenttab();
+   await agentPage.VerifyAgentPage();
+   await homePage.ClickonRoletab();
+   await rolePage.VerifyRolePage();
+ 
+
+    console.log('✅ Completed User & Roles Module Test');
+  });
+    test('Navigate to My Account Module', async () => {
+    console.log('🚀 Starting My Account Module Test');
+    await homePage.ClickonMyAccountTab();
+  
+ 
+
+    console.log('✅ Completed My Account Test');
+  });
+    test('Navigate to My Tickets Module', async () => {
+    console.log('🚀 Starting My Tickets Module Test');
+    await homePage.ClickonMyTicketsTab();
+  
+ 
+
+    console.log('✅ Completed My Tickets Module Test');
+  });
+
+    test('Navigate to My Holidays Module', async () => {
+    console.log('🚀 Starting My Holidays Module Test');
+    await homePage.ClickonMyHolidayTab();
+  
+ 
+
+    console.log('✅ Completed My Holidays Module Test');
+  });
+
 
 
   // test.afterAll(async () => {
