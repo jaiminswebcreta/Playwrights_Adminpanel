@@ -14,8 +14,12 @@ export class WalletReportReportPage {
         await this.WalletReportReportPageheader.isVisible();
         console.log('WalletReportReportPage header is visible');
         await this.WalletReportReportPageBackbutton.isVisible();
-        console.log('Back button is visible')
-        await this.WalletReportReportPageBackbutton.click();
+        console.log('Back button is visible');
+        
+      await Promise.all([
+      this.page.waitForLoadState('domcontentloaded'), // wait for next page to load
+      this.WalletReportReportPageBackbutton.click(),                   // trigger navigation
+    ]);
         console.log(`Click on Back Button`);
         
 

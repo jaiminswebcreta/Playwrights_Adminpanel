@@ -13,11 +13,13 @@ export class OrdersSheetReportPage {
         console.log('🌐 Current URL is: ' + currentUrl);  
         await this.OrdersSheetReportPageheader.isVisible();
         console.log('OrdersSheetReportPage header is visible');
-        await this.OrdersSheetReportPageBackbutton.isVisible();
+        await this.OrdersSheetReportPageBackbutton.waitFor( {state: 'visible', timeout: 10000 });
         console.log('Back button is visible')
-        await this.OrdersSheetReportPageBackbutton.click();
-        console.log(`Click on Back Button`);
-        
+          await Promise.all([
+            this.page.waitForLoadState('domcontentloaded'), // wait for next page
+            this.OrdersSheetReportPageBackbutton.click(), // trigger navigation
+        ]);
+        console.log(' Clicked on Back Button and navigated successfully')
 
     }
     

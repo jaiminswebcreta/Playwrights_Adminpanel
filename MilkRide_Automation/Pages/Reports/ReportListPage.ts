@@ -196,8 +196,12 @@ export class ReportListPage {
 
         async ClickonTransactionstab(){
 
-        await this.Transactionstab.waitFor({ state: 'visible' });
-        await this.Transactionstab.click();
+        await this.Transactionstab.waitFor({ state: 'visible',timeout:1000 });
+        
+        await Promise.all([
+            this.page.waitForLoadState('domcontentloaded'), // wait for next page
+            this.Transactionstab.click(), // trigger navigation
+        ]);
         console.log(`Click on ImageProofTab`);
      }
         async ClickonCustomerSalestab(){

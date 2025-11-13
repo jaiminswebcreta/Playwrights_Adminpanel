@@ -13,78 +13,96 @@ export class HomePage{
     readonly hubManager:Locator;
     readonly Allhub:Locator;
     //delivery
-    readonly delivery:Locator
-    readonly deliverydashboard:Locator
+    readonly delivery:Locator;
+    readonly deliverydashboard:Locator;
     //Inventory
-    readonly inventory:Locator
-    readonly Warehouse:Locator
+    readonly inventory:Locator;
+    readonly Warehouse:Locator;
     //Notifications
-    readonly notifications:Locator
-    readonly pushnotification:Locator
+    readonly notifications:Locator;
+    readonly pushnotification:Locator;
     //Billing History
-    readonly billinghistory:Locator
-    readonly Invoice:Locator
+    readonly billinghistory:Locator;
+    readonly Invoice:Locator;
     //Customers
-    readonly customersmanagement:Locator
-    readonly customers:Locator
-    readonly Grouppricing:Locator
-    readonly customergroups:Locator
-    readonly DiscountRules:Locator
-    readonly coupons:Locator
+    readonly customersmanagement:Locator;
+    readonly customers:Locator;
+    readonly Grouppricing:Locator;
+    readonly customergroups:Locator;
+    readonly DiscountRules:Locator;
+    readonly coupons:Locator;
     //Sales
-    readonly sales:Locator
-    readonly salesdashboard:Locator
+    readonly sales:Locator;
+    readonly salesdashboard:Locator;
 
     //CRM
-    readonly CRMTab:Locator
-    readonly CRMDashboard:Locator
-    readonly Camupaigns:Locator
-    readonly Leads:Locator
-    readonly calllogs:Locator
-    readonly followups:Locator
+    readonly CRMTab:Locator;
+    readonly CRMDashboard:Locator;
+    readonly Camupaigns:Locator;
+    readonly Leads:Locator;
+    readonly calllogs:Locator;
+    readonly followups:Locator;
 
     //Churn management
-    readonly ChrunManagementTab:Locator
-    readonly AtRiskCustomerTab:Locator
-    readonly SubscriptionChangesTab:Locator
-    readonly AbandoedCartsTab:Locator
-    readonly CallLogs2Tab:Locator
-    readonly Followups2Tab:Locator
-
+    readonly ChrunManagementTab:Locator;
+    readonly AtRiskCustomerTab:Locator;
+    readonly SubscriptionChangesTab:Locator;
+    readonly AbandoedCartsTab:Locator;
+    readonly CallLogs2Tab:Locator;
+    readonly Followups2Tab:Locator;
     //Complaint System
-    readonly complaintSystemTab:Locator
-    readonly allComplaintsOption:Locator
-    readonly refundsRequestOption:Locator
+    readonly complaintSystemTab:Locator;
+    readonly allComplaintsOption:Locator;
+    readonly refundsRequestOption:Locator;
     
     //Product cateLog
-    readonly productCatalogTab:Locator
-    readonly CategoriesOption:Locator
-    readonly BrandOption:Locator
-    readonly ProductsOption:Locator
-    readonly ProductOrderingOption:Locator
-    readonly QuickProductUpdate:Locator
-    readonly SettingsOption:Locator
+    readonly productCatalogTab:Locator;
+    readonly CategoriesOption:Locator;
+    readonly BrandOption:Locator;
+    readonly ProductsOption:Locator;
+    readonly ProductOrderingOption:Locator;
+    readonly QuickProductUpdate:Locator;
+    readonly SettingsOption:Locator;
 
     //Flex Product Catelog
-    readonly FlexproductTab:Locator
-    readonly Attributestab:Locator
-    readonly WorkingdayTab:Locator
-    readonly PlanSoltTab:Locator
+    readonly FlexproductTab:Locator;
+    readonly Attributestab:Locator;
+    readonly WorkingdayTab:Locator;
+    readonly PlanSoltTab:Locator;
 
     //Banner
 
-    readonly BannerTab:Locator
+    readonly BannerTab:Locator;
 
     //Location Manager
-    readonly LocationManagerTab:Locator
-    readonly RegionTab:Locator
-    readonly LocationTab:Locator
-    readonly AreaTab :Locator
-    readonly RouteTab:Locator
+    readonly LocationManagerTab:Locator;
+    readonly RegionTab:Locator;
+    readonly LocationTab:Locator;
+    readonly AreaTab :Locator;
+    readonly RouteTab:Locator;
 
     //Reports
-    readonly ReportTab:Locator
-    readonly ViewMOreTab:Locator
+    readonly ReportTab:Locator;
+    readonly ViewMOreTab:Locator;
+
+    //User & Roles
+
+    readonly UsersrolesTab:Locator;
+    readonly MerchantTab :Locator;
+    readonly UserTab : Locator;
+    readonly AgentTab : Locator;
+    readonly RoleTab : Locator;
+    readonly PermissionTab :Locator;
+
+    //my account
+    readonly MyAccountTab:Locator;
+
+    //My holiday
+    readonly MyHolidayTab: Locator;
+
+    //my Tickets
+    readonly MyTicketsTab: Locator;
+
 
 
 
@@ -161,9 +179,150 @@ export class HomePage{
         this.ReportTab=page.locator(`(//span[@class='menu-title'][normalize-space()='Reports'])[1]`);
         this.ViewMOreTab=page.locator( `(//span[normalize-space()='View More'])[1]`);
 
+        // User & Role
+
+        this.UsersrolesTab=page.locator(`(//span[contains(text(),'Users & Roles')])[1]`);
+        this.MerchantTab=page.locator(`(//span[@class='menu-title'][normalize-space()='Merchant'])[2]`);
+        this.UserTab = page.locator(`(//span[normalize-space()='User'])[1]`);
+        this.AgentTab=page.locator(`(//span[normalize-space()='Agent'])[1]`);
+        this.PermissionTab=page.locator(`(//span[normalize-space()='Permission'])[1]`);
+        this.RoleTab = page.locator(`(//span[normalize-space()='Role'])[1]`);
+
+         //my account
+    this.MyAccountTab=page.locator(`(//span[normalize-space()='My Account'])[1]`);
+
+    //My holiday
+    this.MyHolidayTab = page.locator(`(//span[normalize-space()='My Holidays'])[1]`);
+
+    //my Tickets
+    this.MyTicketsTab = page.locator(`(//span[normalize-space()='My Tickets'])[1]`)
+
+
         
 
     }
+       async ClickonMyHolidayTab(){
+        try {
+        
+        await this.MyHolidayTab.waitFor({ state: 'visible' });
+        console.log('MyHolidayTab is visible');
+     
+        await Promise.all([
+            this.page.waitForLoadState(`domcontentloaded`),
+            this.MyHolidayTab.click(),
+        ]);
+        console.log('Clicked on MyHolidayTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking MyHolidayTab:', error);
+    }
+}
+      async ClickonMyTicketsTab(){
+        try {
+        
+        await this.MyTicketsTab.waitFor({ state: 'visible' });
+        console.log('MyTicketsTab is visible');
+        
+        await Promise.all([
+            this.page.waitForLoadState(`domcontentloaded`),
+            this.MyTicketsTab.click(),
+        ]);
+        console.log('Clicked on MyTicketsTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking MyTicketsTab:', error);
+    }
+}
+     async ClickonMyAccountTab(){
+        try {
+        
+        await this.MyAccountTab.waitFor({ state: 'visible' });
+        console.log('MyAccountTab is visible');
+        await Promise.all([
+            await this.page.waitForLoadState(`domcontentloaded`),
+            await this.MyAccountTab.click(),
+        ]);
+        console.log('Clicked on MyAccountTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking MyAccountTab:', error);
+    }
+}
+
+        async ClickonUserRolesTab(){
+        try {
+        
+        await this.UsersrolesTab.waitFor({ state: 'visible' });
+        console.log('UsersrolesTab is visible');
+        await this.UsersrolesTab.click();
+        console.log('Clicked on UsersrolesTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking UsersrolesTab:', error);
+    }
+}
+ async ClickonMerchanttab(){
+        try {
+        
+        await this.MerchantTab.waitFor({ state: 'visible' });
+        console.log('MerchantTab is visible');
+        await this.MerchantTab.click();
+        console.log('Clicked on MerchantTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking MerchantTab:', error);
+    }
+}
+
+ async Clickonusertab(){
+        try {
+        
+        await this.UserTab.waitFor({ state: 'visible' });
+        console.log('UserTab is visible');
+        await this.UserTab.click();
+        console.log('Clicked on UserTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking UserTab:', error);
+    }
+}
+async ClickonAgenttab(){
+        try {
+        
+        await this.AgentTab.waitFor({ state: 'visible' });
+        console.log('AgentTab is visible');
+        await this.AgentTab.click();
+        console.log('Clicked on AgentTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking AgentTab:', error);
+    }
+}
+async ClickonRoletab(){
+        try {
+        
+        await this.RoleTab.waitFor({ state: 'visible' });
+        console.log('RoleTab is visible');
+        await this.AgentTab.click();
+        console.log('Clicked on RoleTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking RoleTab:', error);
+    }
+}
+async ClickonPermissiontab(){
+        try {
+        
+        await this.PermissionTab.waitFor({ state: 'visible' });
+        console.log('PermissionTab is visible');
+        await this.AgentTab.click();
+        console.log('Clicked on PermissionTab');
+        }
+        catch (error) {
+        console.error('❌ Error in clicking PermissionTab:', error);
+    }
+}
+
     async ClickonReportstab(){
         await this.ReportTab.click();
         console.log(`Click on Reports Tab`);
